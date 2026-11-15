@@ -1,0 +1,25 @@
+MEU PONTO v1.9.0
+
+ATUALIZE NA RAIZ DO GITHUB PAGES:
+- index.html
+- version.json
+- manifest.webmanifest
+- sw.js
+- pasta icons/ com icon-192.png e icon-512.png
+
+NÃO SUBSTITUA config.js. NÃO EXECUTE SQL. NÃO LIMPE O ARMAZENAMENTO DO NAVEGADOR.
+Exporte backup JSON antes de publicar.
+
+ALTERAÇÕES:
+- Removido apenas o CARD RESUMIDO "DSR estimado" da aba Relatórios. DSR continua no demonstrativo completo, nos cálculos de bruto e líquido.
+- PWA instalável no Android/desktop e opção Adicionar à Tela de Início no iPhone.
+- Service worker com cache restrito aos arquivos do app e config.js publicável. Nenhum registro, API autenticada, resposta do Supabase ou senha é salvo em cache pelo service worker.
+- Navegação local offline após uma primeira visita online. Dados existentes seguem armazenados conforme lógica original. O sincronismo com Supabase requer internet.
+- Atualização controlada: não fecha jornada nem limpa registros.
+
+VALIDAÇÃO RECOMENDADA:
+- Depois da publicação abra o app e confirme v1.9.0.
+- Use ferramentas do navegador > Aplicativo > Manifesto e Service Workers.
+- Teste online e offline sem limpar armazenamento.
+- Entre em outro dispositivo e confira as batidas sincronizadas.
+- O PWA não garante acesso à nuvem quando não há internet.
