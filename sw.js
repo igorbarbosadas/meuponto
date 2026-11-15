@@ -1,5 +1,5 @@
-/* Meu Ponto v1.9.0 — escopo exclusivo deste aplicativo. */
-const VERSION='1.9.0';
+/* Meu Ponto v1.9.1 — escopo exclusivo deste aplicativo. */
+const VERSION='1.9.1';
 const SHELL='meuponto-shell-'+VERSION;
 const PUBLIC='meuponto-public-'+VERSION;
 const APP_FILES=['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png'];

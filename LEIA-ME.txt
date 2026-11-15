@@ -1,25 +1,13 @@
-MEU PONTO v1.9.0
+MEU PONTO v1.9.1 | REDESIGN VISUAL
 
-ATUALIZE NA RAIZ DO GITHUB PAGES:
-- index.html
-- version.json
-- manifest.webmanifest
-- sw.js
-- pasta icons/ com icon-192.png e icon-512.png
+Arquivos atualizados: index.html, version.json, sw.js.
+Arquivos mantidos: manifest.webmanifest, icons/.
 
-NÃO SUBSTITUA config.js. NÃO EXECUTE SQL. NÃO LIMPE O ARMAZENAMENTO DO NAVEGADOR.
-Exporte backup JSON antes de publicar.
+IMPORTANTE: mantenha seu config.js atual do GitHub. Ele nao esta neste ZIP.
+Nao ha mudancas no Supabase SQL, nos dados salvos ou na estrutura do banco.
 
-ALTERAÇÕES:
-- Removido apenas o CARD RESUMIDO "DSR estimado" da aba Relatórios. DSR continua no demonstrativo completo, nos cálculos de bruto e líquido.
-- PWA instalável no Android/desktop e opção Adicionar à Tela de Início no iPhone.
-- Service worker com cache restrito aos arquivos do app e config.js publicável. Nenhum registro, API autenticada, resposta do Supabase ou senha é salvo em cache pelo service worker.
-- Navegação local offline após uma primeira visita online. Dados existentes seguem armazenados conforme lógica original. O sincronismo com Supabase requer internet.
-- Atualização controlada: não fecha jornada nem limpa registros.
+Publicacao: substitua index.html, version.json e sw.js na raiz da branch publicada. Mantenha manifest.webmanifest e icons/ existentes. Antes da substituicao, exporte um backup JSON e confirme a sincronizacao.
 
-VALIDAÇÃO RECOMENDADA:
-- Depois da publicação abra o app e confirme v1.9.0.
-- Use ferramentas do navegador > Aplicativo > Manifesto e Service Workers.
-- Teste online e offline sem limpar armazenamento.
-- Entre em outro dispositivo e confira as batidas sincronizadas.
-- O PWA não garante acesso à nuvem quando não há internet.
+Mudancas: UI mobile-first com cartoes refinados, hero de jornada, indicadores financeiros, formularios, relatorios e ajustes. Barra inferior fixa mantida. Os IDs e eventos de interface da v1.9.0 foram preservados.
+
+Validacao real de login, nuvem, PWA e jornada pendente no dispositivo do usuario.
