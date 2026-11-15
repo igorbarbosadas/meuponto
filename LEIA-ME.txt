@@ -1,13 +1,4 @@
-MEU PONTO v1.9.1 | REDESIGN VISUAL
-
-Arquivos atualizados: index.html, version.json, sw.js.
-Arquivos mantidos: manifest.webmanifest, icons/.
-
-IMPORTANTE: mantenha seu config.js atual do GitHub. Ele nao esta neste ZIP.
-Nao ha mudancas no Supabase SQL, nos dados salvos ou na estrutura do banco.
-
-Publicacao: substitua index.html, version.json e sw.js na raiz da branch publicada. Mantenha manifest.webmanifest e icons/ existentes. Antes da substituicao, exporte um backup JSON e confirme a sincronizacao.
-
-Mudancas: UI mobile-first com cartoes refinados, hero de jornada, indicadores financeiros, formularios, relatorios e ajustes. Barra inferior fixa mantida. Os IDs e eventos de interface da v1.9.0 foram preservados.
-
-Validacao real de login, nuvem, PWA e jornada pendente no dispositivo do usuario.
+Meu Ponto v1.9.2
+Correção de responsividade mobile (cards, navegação inferior e largura).
+Publique index.html, version.json e sw.js. Preserve config.js e o banco Supabase.
+Faça backup antes de atualizar. Cálculos, autenticação e persistência não foram modificados.
