@@ -1,4 +1,7 @@
-Meu Ponto v1.9.2
-Correção de responsividade mobile (cards, navegação inferior e largura).
-Publique index.html, version.json e sw.js. Preserve config.js e o banco Supabase.
-Faça backup antes de atualizar. Cálculos, autenticação e persistência não foram modificados.
+Meu Ponto v1.9.3
+
+Mudanca: legenda, percentuais e descricoes da barra de composicao dos ganhos variaveis.
+
+No GitHub substitua index.html, version.json e sw.js. Preserve o config.js atual e os registros.
+README.md apresenta o aplicativo sem capturas de tela.
+Nao ha mudancas no Supabase ou em formulas salariais.
