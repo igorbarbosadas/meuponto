@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#111b31" name="theme-color"/><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/><meta http-equiv="Pragma" content="no-cache"/><title>Meu Ponto v1.7.2 • Controle de jornada</title><style>
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#111b31" name="theme-color"/><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/><meta http-equiv="Pragma" content="no-cache"/><title>Meu Ponto v1.8.0 • Controle de jornada</title><style>
 :root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#19253a;background:#f2f5fa;font-size:15px}*{box-sizing:border-box}body{margin:0}.shell{max-width:1000px;margin:0 auto;padding:24px 18px 110px}.top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:25px}.brand{display:flex;align-items:center;gap:11px}.logo{width:41px;height:41px;border-radius:13px;display:grid;place-items:center;background:#172b50;color:#fff;font-weight:900;font-size:22px}h1{font-size:20px;margin:0;letter-spacing:-.6px}.muted{color:#718096}.small{font-size:12px}.tag{padding:7px 10px;border-radius:30px;background:#e5eaf2;font-size:12px;font-weight:700}.tabs{display:flex;gap:7px;overflow:auto;margin-bottom:18px}.tab{border:0;padding:12px 17px;border-radius:11px;background:transparent;color:#63728a;font-weight:700;cursor:pointer;white-space:nowrap}.tab.active{background:#fff;color:#172c51;box-shadow:0 2px 10px #17284410}.page{display:none}.page.active{display:block}.hero{background:#182c4f;color:white;padding:25px;border-radius:22px;position:relative;overflow:hidden}.hero:after{content:'';position:absolute;right:-56px;top:-120px;width:300px;height:300px;border-radius:50%;border:58px solid #ffffff0b;pointer-events:none}.hero .small{color:#b9c9e3}.hero h2{font-size:43px;line-height:1.15;margin:10px 0 8px;letter-spacing:-1.3px;font-variant-numeric:tabular-nums}.hero .pill{display:inline-flex;padding:7px 11px;border-radius:30px;background:#ffffff1b;font-size:12px;font-weight:700}.hero .pill.on{background:#1c8065;color:white}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:13px}.card{background:white;border:1px solid #e6ecf4;border-radius:17px;padding:19px;box-shadow:0 2px 10px #14244305}.kpi{font-size:24px;font-weight:800;margin:7px 0 2px;letter-spacing:-.7px;font-variant-numeric:tabular-nums}.card h3,.panel h3{margin:0 0 12px;font-size:16px}.panel{background:white;border:1px solid #e6ecf4;border-radius:17px;padding:20px;margin-top:14px}.row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.stack{display:flex;gap:8px;flex-wrap:wrap}.btn{border:0;background:#1e3964;color:white;font-weight:750;border-radius:11px;padding:13px 17px;cursor:pointer;font:inherit;font-weight:700}.btn.sec{background:#edf2f8;color:#263b5b}.btn.danger{background:#fff0ee;color:#ba3a33}.btn:disabled{opacity:.4;cursor:not-allowed}.btn.smol{padding:9px 11px;font-size:12px}.btn:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #9db9df}.divider{border-top:1px solid #edf1f6;margin:16px 0}.record{padding:13px 0;border-bottom:1px solid #edf1f6;display:flex;justify-content:space-between;align-items:center;gap:10px}.record:last-child{border-bottom:0}.dot{width:9px;height:9px;border-radius:50%;display:inline-block;background:#428aab;margin-right:8px}.dot.saida{background:#b87965}.dot.intervalo{background:#deb04b}.value{font-weight:800;font-variant-numeric:tabular-nums}label{display:block;font-weight:700;color:#35455f;margin:0 0 6px;font-size:13px}input,select{width:100%;border:1px solid #dbe3ed;border-radius:10px;padding:12px;background:white;color:#1b2a43;font:inherit}input[type=checkbox]{width:auto;accent-color:#253d64}.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.field-wide{grid-column:1/-1}.notice{background:#f1f5fa;border-left:3px solid #718dac;border-radius:9px;padding:12px 15px;color:#52617c;font-size:13px;line-height:1.6;margin-top:12px}.biglabel{font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:#718096;font-weight:800}.amount{font-size:25px;font-weight:850;letter-spacing:-.6px}.table{width:100%;border-collapse:collapse;font-size:13px}.table th,.table td{text-align:left;padding:12px 8px;border-bottom:1px solid #edf1f5;white-space:nowrap}.table th{color:#738198;font-size:11px;text-transform:uppercase}.scroll{overflow-x:auto}.bar{height:9px;border-radius:8px;background:#e9eef6;overflow:hidden}.bar>div{height:100%;background:#355b8f;border-radius:8px}.modalBack{position:fixed;inset:0;background:#14233b8c;display:none;place-items:center;padding:15px;z-index:15}.modalBack.show{display:grid}.modal{background:white;border-radius:19px;padding:23px;max-width:520px;max-height:90dvh;overflow:auto;width:100%}.empty{text-align:center;color:#75839b;padding:27px}.footer{font-size:12px;color:#8a95a7;margin-top:20px;line-height:1.6}#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);padding:12px 18px;border-radius:11px;background:#192a48;color:white;display:none;z-index:25;max-width:90vw;text-align:center}.tools{display:flex;gap:8px;flex-wrap:wrap}button.iconb{border:0;background:none;color:#3c587c;font-weight:bold;cursor:pointer}.narrow{max-width:220px}.statrow{display:grid;grid-template-columns:1fr 1fr;gap:9px}.mini{padding:13px;background:#f5f7fb;border-radius:12px}.mini strong{font-size:18px} @media(max-width:650px){.shell{padding:17px 13px 95px}.hero h2{font-size:35px}.grid{grid-template-columns:repeat(2,1fr)}.grid .card:last-child{grid-column:1/-1}.card{padding:15px}.kpi{font-size:20px}.fields{grid-template-columns:1fr}.tab{padding:10px 13px}.panel{padding:16px}}
 
 .weekdays{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;margin:10px 0}.weekday{font-weight:700;font-size:12px;text-align:center;border:1px solid #d8e1ee;border-radius:10px;padding:12px 0;background:#f6f8fc;cursor:pointer}.weekday:has(input:checked){color:#fff;background:#182c4f}.weekday input{position:absolute;opacity:0;width:1px}.fields input[type=date]{width:100%}.readout{padding:12px;background:#eef4ff;border-radius:12px;line-height:1.6;margin:12px 0}.hint{font-size:12px;color:#64748b}.flowrow{display:flex;align-items:center;flex-wrap:wrap;gap:8px}.daybadge{background:#eaf1f9;border-radius:8px;padding:5px 8px;font-size:12px}.daybadge.holiday{background:#ffefcf;color:#915900}.statusgood{color:#087350}.statuswarn{color:#aa5f00}
@@ -20,7 +20,7 @@
 .action-footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:12px;color:#687a96;font-size:12px;line-height:1.5}
 @media(max-width:650px){.action-card{flex-direction:column;align-items:stretch;padding:16px;gap:15px}.action-buttons{width:100%;min-width:0}.action-title{font-size:25px}}
 
-/* v1.7.2: indicadores uniformes, dois grupos de tres sem espacos ociosos */
+/* v1.8.0: indicadores uniformes, dois grupos de tres sem espacos ociosos */
 .report-kpi-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:13px}
 .report-kpi-grid>.card{min-width:0;min-height:112px;display:flex;flex-direction:column;justify-content:center}
 .journey-status{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:9px}
@@ -102,7 +102,7 @@ body.locked .shell{display:none}
 @media(max-width:720px){.report-kpi-grid.compact-report-grid{grid-template-columns:1fr 1fr}.compact-report-grid>.card{padding:14px;min-height:115px}.compact-report-grid .report-pair{gap:5px}.compact-report-grid .report-pair>div{padding:8px}.compact-report-grid .report-pair strong,.compact-report-grid .journey-status.report-three strong{font-size:17px}.compact-report-grid .journey-status.report-three{gap:4px}.compact-report-grid .journey-status.report-three>div{padding:7px 5px}.compact-report-grid .journey-status.report-three span{font-size:10px}}
 @media(max-width:520px){.report-kpi-grid.compact-report-grid{grid-template-columns:1fr}.compact-report-grid>.card{min-height:0;padding:16px}.compact-report-grid .report-pair strong,.compact-report-grid .journey-status.report-three strong{font-size:21px}.compact-report-grid .journey-status.report-three>div{padding:9px}}
 </style><style id="v172-report-design">
-/* v1.7.2: painéis de análise compactos e independentes, sem áreas vazias artificiais */
+/* v1.8.0: painéis de análise compactos e independentes, sem áreas vazias artificiais */
 .report-analysis-grid{grid-template-columns:minmax(0,1.12fr) minmax(0,0.88fr);align-items:start;gap:14px;margin-top:14px}
 .report-analysis-grid>.report-insight-panel{height:auto;min-height:0;padding:19px 20px 17px;box-shadow:0 5px 18px rgba(24,45,78,.035)}
 .report-insight-panel .insight-heading{border-bottom:1px solid #e8edf5;padding-bottom:12px;margin-bottom:7px}
@@ -125,7 +125,93 @@ body.locked .shell{display:none}
 .insight-quality-grid>.quality-footnote{grid-column:1/-1;font-size:11px;line-height:1.45;color:#6e819c;margin:4px 0 0}
 @media(max-width:760px){.report-analysis-grid{grid-template-columns:1fr}.report-analysis-grid>.report-insight-panel{padding:17px}}
 @media(max-width:420px){.insight-quality-grid{gap:7px}.insight-quality-grid>.quality-tile{padding:10px;min-height:78px}.insight-quality-grid>.quality-tile strong{font-size:20px}}
-</style></head><body class="locked"><div id="appUpdateBanner" class="app-update-banner" role="status" hidden><span id="appUpdateMessage">Nova versão disponível</span><button type="button" id="appUpdateButton">Atualizar aplicativo</button><button type="button" id="appUpdateDismiss" aria-label="Dispensar aviso">Agora não</button></div><section aria-label="Acesso ao Meu Ponto" class="auth-screen" id="authScreen"><div class="auth-panel"><div class="auth-heading"><div class="logo">M</div><div><h2>Meu Ponto</h2><p>Controle sua jornada e seus ganhos · v1.7.2</p></div></div><form id="authForm"><h3 id="authTitle">Entrar na sua conta</h3><label for="authEmail">E-mail</label><input autocomplete="username" id="authEmail" placeholder="seu@email.com" required="" type="email"/><div id="passFields"><label for="authPassword">Senha</label><input autocomplete="current-password" id="authPassword" minlength="6" placeholder="Sua senha" type="password"/></div><div hidden="" id="confirmPassFields"><label for="authPassword2">Confirmar senha</label><input autocomplete="new-password" id="authPassword2" placeholder="Repita a senha" type="password"/></div><div class="auth-msg" id="authMessage" role="status"></div><button class="btn" id="authSubmit" type="submit">Entrar</button></form><div class="auth-links"><button id="authSwitch" type="button">Criar conta</button><button id="authForgot" type="button">Esqueci minha senha</button></div><p class="auth-note">Seus registros são vinculados à sua conta. Dados do servidor são a referência. Registros locais pendentes são preservados em cópia de recuperação se houver conflito.</p></div></section><main class="shell"><header class="top"><div class="brand"><div class="logo">M</div><div><h1>Meu Ponto</h1><div class="muted small">Jornada e ganhos em tempo real · v1.7.2</div></div></div><div class="header-meta"><span class="sync-dot" id="syncDot" aria-hidden="true"></span><span id="cloudLabel" class="sync-mini" role="status">Verificando nuvem</span><span class="tag" id="todayBadge"></span></div></header><nav aria-label="Seções" class="tabs"><button class="tab active" data-page="inicio">Início</button><button class="tab" data-page="ponto">Meu ponto</button><button class="tab" data-page="relatorios">Relatórios</button><button class="tab" data-page="ajustes">Ajustes</button></nav><div id="reconcile" hidden><span id="reconcileText"></span><button id="useCloud" hidden></button><button id="useLocal" hidden></button></div>
+
+
+/* Meu Ponto v1.8.0: ergonomia mobile. As telas desktop permanecem inalteradas. */
+@media (max-width: 700px) {
+ :root{font-size:15px}
+ html{scroll-padding-top:12px;scroll-padding-bottom:96px}
+ body{overflow-x:hidden}
+ .shell{padding:14px 12px calc(104px + env(safe-area-inset-bottom,0px));max-width:100%}
+ .top{margin-bottom:12px;gap:7px;align-items:center}
+ .brand{gap:8px;min-width:0}
+ .brand .logo{width:38px;height:38px;border-radius:12px;font-size:20px;flex-shrink:0}
+ .brand h1{font-size:17px;letter-spacing:-.35px}
+ .brand .small{font-size:10px;line-height:1.35}
+ .header-meta{gap:5px;flex-shrink:0}
+ .header-meta .sync-mini{font-size:10px}
+ .header-meta .tag{font-size:11px;padding:6px 7px}
+ .tabs{position:fixed;bottom:0;left:0;right:0;width:100%;height:calc(66px + env(safe-area-inset-bottom,0px));padding:6px max(8px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-right,0px));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;margin:0;background:rgba(255,255,255,.97);border-top:1px solid #dce6f1;box-shadow:0 -5px 23px #172f5314;z-index:20;overflow:visible;backdrop-filter:blur(12px);border-radius:0}
+ .tab{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:0;min-height:50px;padding:5px 2px!important;border-radius:10px;font-size:11px;line-height:1.15;color:#61728e;box-shadow:none!important}
+ .tab.active{color:#183d73;background:#eaf1fa}
+ .tab .nav-icon{width:21px;height:21px;display:block;flex-shrink:0}
+ .tab .nav-icon svg{width:100%;height:100%;display:block;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+ .hero{border-radius:17px;padding:18px}
+ .hero:after{width:200px;height:200px;border-width:33px;top:-68px;right:-68px}
+ .hero h2{font-size:33px;margin:7px 0 8px}
+ .hero .row{gap:8px}
+ .hero .small{font-size:11px}
+ .card,.panel{border-radius:15px}
+ .panel{padding:15px;margin-top:11px}
+ .card{padding:14px}
+ .panel h3,.card h3{font-size:15px;margin-bottom:10px}
+ .kpi{font-size:20px}
+ .biglabel{font-size:10px;letter-spacing:.45px}
+ .hint,.notice,.footer{font-size:12px;line-height:1.45}
+ .notice{padding:10px 12px;margin-top:9px}
+ .grid{gap:8px;margin-top:9px}
+ .grid .card:last-child{grid-column:auto}
+ .grid:has(> .card:nth-child(3):last-child)>.card:last-child{grid-column:1 / -1}
+ .btn{min-height:44px;padding:11px 13px;font-size:13px}
+ .btn.smol{min-height:40px;font-size:12px;padding:9px 11px}
+ input,select{min-height:46px;font-size:16px;padding:10px 11px}
+ .fields{gap:11px}
+ .fields label{font-size:12px}
+ .record{padding:10px 0;gap:8px}
+ .record .stack .btn{min-height:40px}
+ .point-top-grid{gap:10px}
+ .action-card{padding:13px;gap:12px}
+ .action-buttons .btn{min-height:46px}
+ .action-title{font-size:23px}
+ .action-subtitle{font-size:12px}
+ .report-heading{gap:12px}
+ .report-kpi-grid{gap:8px}
+ .report-kpi-grid.compact-report-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .report-kpi-grid.compact-report-grid>.card:nth-child(2),.report-kpi-grid.compact-report-grid>.card:nth-child(3){grid-column:1/-1}
+ .report-kpi-grid.compact-report-grid>.card:nth-child(4){grid-column:2;grid-row:1}
+ .report-kpi-grid.compact-report-grid>.card:nth-child(1){grid-column:1;grid-row:1}
+ .report-kpi-grid>.card{padding:12px;min-height:0}
+ .report-pay-values .mini{padding:13px}
+ .report-pay-values strong{font-size:20px}
+ .report-analysis-grid{gap:9px}
+ .report-insight-panel{padding:14px!important}
+ .report-day{gap:9px}
+ .report-day .money{min-width:unset}
+ #toast{bottom:calc(77px + env(safe-area-inset-bottom,0px));font-size:13px}
+ .modalBack{z-index:31;padding:10px}
+ .modal{max-height:calc(100dvh - 28px - env(safe-area-inset-bottom,0px));padding:18px}
+ .mobile-report{margin-top:11px;border:1px solid #e2eaf4;border-radius:15px;background:#fff;overflow:hidden}
+ .mobile-report>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;padding:15px 16px;color:#172c51;font-size:15px;font-weight:750;min-height:53px}
+ .mobile-report>summary::-webkit-details-marker{display:none}
+ .mobile-report>summary::after{content:'+';font-size:22px;font-weight:400;color:#476184;line-height:1}
+ .mobile-report[open]>summary::after{content:'−'}
+ .mobile-report>summary .section-summary{font-weight:450;font-size:11px;color:#718096;display:block;margin-top:3px}
+ .mobile-report>.panel{border:0;border-top:1px solid #e8eef6;margin:0;border-radius:0;box-shadow:none;padding:14px}
+ .mobile-report>.report-duo{border-top:1px solid #e8eef6;padding:10px;display:grid;grid-template-columns:1fr}
+ .mobile-report>.report-duo>.panel{margin:0;border:0;padding:12px!important;box-shadow:none}
+ .mobile-report>.report-duo>.panel+.panel{border-top:1px solid #eef1f5}
+ .report-section-title{margin-top:14px}
+ #fullCalcPanel{scroll-margin-top:16px}
+ #reportDayList{max-width:100%;overflow:hidden}
+ .report-day{flex-wrap:wrap}
+ .report-day>div:first-child{min-width:0}
+ .report-calc{overflow-wrap:anywhere}
+}
+@media (max-width: 360px){.shell{padding-left:9px;padding-right:9px}.tab{font-size:10px}.brand .small{font-size:9px}.sync-mini{max-width:65px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.report-kpi-grid{grid-template-columns:1fr 1fr}}
+@media (min-width: 701px){.nav-icon{display:none!important}.mobile-report{display:contents}.mobile-report>summary{display:none}.mobile-report>.panel{margin-top:14px}.mobile-report>.report-duo{margin-top:14px}}
+@media (prefers-reduced-motion:reduce){.tabs,.tab{transition:none!important}html{scroll-behavior:auto!important}}
+
+</style></head><body class="locked"><div id="appUpdateBanner" class="app-update-banner" role="status" hidden><span id="appUpdateMessage">Nova versão disponível</span><button type="button" id="appUpdateButton">Atualizar aplicativo</button><button type="button" id="appUpdateDismiss" aria-label="Dispensar aviso">Agora não</button></div><section aria-label="Acesso ao Meu Ponto" class="auth-screen" id="authScreen"><div class="auth-panel"><div class="auth-heading"><div class="logo">M</div><div><h2>Meu Ponto</h2><p>Controle sua jornada e seus ganhos · v1.8.0</p></div></div><form id="authForm"><h3 id="authTitle">Entrar na sua conta</h3><label for="authEmail">E-mail</label><input autocomplete="username" id="authEmail" placeholder="seu@email.com" required="" type="email"/><div id="passFields"><label for="authPassword">Senha</label><input autocomplete="current-password" id="authPassword" minlength="6" placeholder="Sua senha" type="password"/></div><div hidden="" id="confirmPassFields"><label for="authPassword2">Confirmar senha</label><input autocomplete="new-password" id="authPassword2" placeholder="Repita a senha" type="password"/></div><div class="auth-msg" id="authMessage" role="status"></div><button class="btn" id="authSubmit" type="submit">Entrar</button></form><div class="auth-links"><button id="authSwitch" type="button">Criar conta</button><button id="authForgot" type="button">Esqueci minha senha</button></div><p class="auth-note">Seus registros são vinculados à sua conta. Dados do servidor são a referência. Registros locais pendentes são preservados em cópia de recuperação se houver conflito.</p></div></section><main class="shell"><header class="top"><div class="brand"><div class="logo">M</div><div><h1>Meu Ponto</h1><div class="muted small">Jornada e ganhos em tempo real · v1.8.0</div></div></div><div class="header-meta"><span class="sync-dot" id="syncDot" aria-hidden="true"></span><span id="cloudLabel" class="sync-mini" role="status">Verificando nuvem</span><span class="tag" id="todayBadge"></span></div></header><nav aria-label="Seções" class="tabs"><button class="tab active" data-page="inicio">Início</button><button class="tab" data-page="ponto">Meu ponto</button><button class="tab" data-page="relatorios">Relatórios</button><button class="tab" data-page="ajustes">Ajustes</button></nav><div id="reconcile" hidden><span id="reconcileText"></span><button id="useCloud" hidden></button><button id="useLocal" hidden></button></div>
 <section class="page active" id="inicio"><div id="homeAlerts"></div><div class="hero"><div class="small">JORNADA ATUAL · HORAS E ADICIONAIS ESTIMADOS</div><h2 id="todayPay">R$ 0,00</h2><div class="row"><span class="pill" id="statusPill">Aguardando entrada</span><span class="small" id="clockText"></span></div><div class="live-schedule" id="liveSchedule">Registre a entrada para acompanhar seu turno.</div><div class="row" style="margin-top:20px"><div><div class="small">Tempo trabalhado</div><div class="amount" id="todayTime">0h00</div></div><div><div class="small">Extras acumuladas</div><div class="amount" id="todayExtra">0h00</div></div></div></div><div class="grid"><div class="card"><div class="biglabel">Adicional noturno hoje</div><div class="kpi" id="todayNight">R$ 0,00</div></div><div class="card"><div class="biglabel">Horas extras hoje</div><div class="kpi" id="todayExtraPay">R$ 0,00</div></div><div class="card"><div class="biglabel">Adicionais no mês</div><div class="kpi" id="monthVariable">R$ 0,00</div></div></div><div aria-label="Registrar batida" class="panel point-action-panel"><div class="row"><h3>Registrar ponto</h3><span class="daybadge" id="actionStateBadge">Pendente</span></div><div aria-live="polite" class="action-card"><div class="action-copy"><div class="biglabel">PRÓXIMA AÇÃO</div><div class="action-title" id="nextAction">Entrada</div><div class="action-subtitle" id="actionHint">Registre a batida com o horário atual.</div></div><div class="action-buttons" id="quickButtons"></div></div><div class="action-footer"><span id="lastStamp">Nenhuma batida registrada nesta jornada.</span><span>Os horários são registrados conforme o relógio do dispositivo.</span></div></div><div class="panel"><div class="row"><h3>Minha escala e próximos dias</h3><span class="muted small" id="todayPlan">Verificando escala</span></div><div class="flowrow"><span class="daybadge" id="todayHoliday">Dia normal</span><span class="daybadge" id="todaySchedule">Escala configurada</span></div><div class="scale-overview" id="scaleOverview" aria-live="polite"></div><div class="tools"><button type="button" class="btn sec smol" id="openScheduleSettings">Alterar escala e feriados</button></div></div><div class="panel"><div class="row"><div><h3>Resumo financeiro do mês</h3><p class="hint">Valores estimados com base nas jornadas registradas.</p></div><button class="btn sec smol" type="button" id="showMonthCalc">Ver relatório completo</button></div><div class="statrow"><div class="mini"><div class="biglabel">Salário-base</div><strong id="baseView">R$ 3.980,00</strong></div><div class="mini"><div class="biglabel">Bruto estimado</div><strong id="grossView">R$ 3.980,00</strong></div><div class="mini"><div class="biglabel">Líquido estimado</div><strong id="monthNet">R$ 0,00</strong></div></div><div class="home-extra-line">Adicionais acumulados no mês: <strong id="monthVariableDetail">R$ 0,00</strong></div><div hidden aria-hidden="true"><span id="monthNight"></span><span id="monthExtra"></span><span id="monthHoliday"></span><span id="monthDsr"></span><span id="monthInss"></span><span id="monthIrrf"></span></div></div><div class="grid" style="margin-top:13px"><div class="card"><div class="biglabel">Horas normais nesta jornada</div><div class="kpi" id="todayBaseEarned">R$ 0,00</div><div class="hint">Parcela do salário-base, não é ganho extra.</div></div><div class="card"><div class="biglabel">Adicionais nesta jornada</div><div class="kpi" id="todayVariableEarned">R$ 0,00</div><div class="hint">Noturno + extras + feriado.</div></div><div class="card"><div class="biglabel">Feriado na jornada</div><div class="kpi" id="todayHolidayPay">R$ 0,00</div></div></div></section>
 <section class="page" id="ponto"><div id="pointAlerts"></div><div class="point-top-grid"><div class="panel current-punch-panel"><h3>Batidas da jornada atual</h3><p class="muted small">Consulte, edite ou exclua marcações.</p><div class="empty" id="activeRecords">Nenhum registro ainda.</div></div><div class="panel manual-punch-panel"><h3>Inserir horário manual</h3><div class="fields"><div><label for="manualType">Tipo de batida</label><select id="manualType"><option value="entrada">Entrada</option><option value="inicio_intervalo">Início do intervalo</option><option value="fim_intervalo">Fim do intervalo</option><option value="saida">Saída</option></select></div><div><label for="manualTime">Data e hora</label><input id="manualTime" type="datetime-local"/></div></div><div class="manual-actions"><button class="btn" id="manualSave">Salvar batida</button><button class="btn sec" id="addProof" type="button">Adicionar comprovante</button></div><p class="muted small point-note">Use o comprovante para registrar o horário impresso no papel.</p></div></div><div class="panel"><h3>Situação dos dias previstos</h3><p class="muted small">Dias da escala deste mês. O dia atual mostra batidas feitas ou pendentes. Dias anteriores sem entrada aparecem como pendentes.</p><div class="row" style="margin:12px 0"><input type="month" id="calendarMonth" class="narrow"/><span class="muted small" id="calendarCounts"></span></div><div id="pendingDays"></div><div class="calendar-legend"><span><i class="leg done"></i> Concluído</span><span><i class="leg open"></i> Aberto</span><span><i class="leg pending"></i> Pendente</span><span><i class="leg off"></i> Folga</span></div><div class="cal-detail" id="calendarDetail"></div></div></section>
 <section class="page archived-history" id="historico" hidden aria-hidden="true"><div class="panel"><h3>Histórico de jornadas</h3><div class="history-filters"><div><label for="filterMonth">Mês</label><input id="filterMonth" type="month"/></div><div><label for="historyStatus">Situação</label><select id="historyStatus"><option value="all">Todas</option><option value="finished">Concluídas</option><option value="open">Em aberto</option><option value="extra">Com horas extras</option><option value="holiday">Feriados</option></select></div><div><label for="historySearch">Buscar dia (número)</label><input id="historySearch" type="search" placeholder="Ex.: 14" inputmode="numeric" maxlength="2"/></div></div><div id="historyTotals" class="history-summary"></div><div id="historyRows">Sem jornadas registradas.</div></div></section>
@@ -370,9 +456,9 @@ function rememberRevision(revision){knownRevision=revision;sbRevision=revision;i
 function backupPending(reason){if(!sbUser)return;let key=recoveryKey(sbUser.id),existing=[];try{existing=JSON.parse(localStorage.getItem(key)||'[]')}catch{};if(!Array.isArray(existing))existing=[];existing.push({savedAt:new Date().toISOString(),reason,revision:knownRevision,data:JSON.parse(JSON.stringify(db))});try{localStorage.setItem(key,JSON.stringify(existing.slice(-5)))}catch{};showRecovery()}
 function showRecovery(){if(!sbUser)return;let copies=[];try{copies=JSON.parse(localStorage.getItem(recoveryKey(sbUser.id))||'[]')}catch{};const available=Array.isArray(copies)&&copies.length>0;el('recoveryMessage').hidden=!available;el('downloadRecovery').hidden=!available;if(available)el('recoveryMessage').textContent=`${copies.length} cópia(s) local(is) preservada(s) por divergência com o servidor. Exporte antes de decidir recuperar registros.`}
 function queueSync(){if(!sessionReady||!sbUser)return;clearTimeout(syncTimer);syncTimer=setTimeout(()=>cloudPush(false),1300)}
-// v1.7.2: a configuração pública é sempre obtida da rede com URL única.
+// v1.8.0: a configuração pública é sempre obtida da rede com URL única.
 // Nunca limpar localStorage, cache de registros ou sessão para resolver atualização.
-const APP_VERSION='1.7.2';
+const APP_VERSION='1.8.0';
 let configRequest=null;
 function loadPublicConfig(){
  if(configRequest)return configRequest;
@@ -546,4 +632,51 @@ bootAuth();
 el('showMonthCalc').onclick=()=>{document.querySelector('[data-page=relatorios]').click();el('fullCalcPanel').scrollIntoView({behavior:'smooth',block:'start'})};el('showPayCalc').onclick=()=>el('fullCalcPanel').scrollIntoView({behavior:'smooth',block:'start'});el('showReportCalc').onclick=()=>el('fullCalcPanel').scrollIntoView({behavior:'smooth',block:'start'});el('reportMonth').value=monthKey(now());el('reportMonth').onchange=renderFinancialReport;el('openScheduleSettings').onclick=()=>{document.querySelector('[data-page=ajustes]').click();const all=[...document.querySelectorAll('#ajustes details')];if(all[2])all[2].open=true;if(all[3])all[3].open=true};el('auditClose').onclick=()=>el('auditModal').classList.remove('show');el('auditModal').addEventListener('click',e=>{if(e.target===el('auditModal'))el('auditModal').classList.remove('show')});document.addEventListener('keydown',e=>{if(e.key==='Escape')el('auditModal').classList.remove('show')});render();setInterval(render,1000);
 })();
 
-</script></body></html>
+</script>
+<script>
+/* v1.8.0 mobile-only presentation. No changes to the payroll engine or cloud state. */
+(function(){
+ const iconPaths={
+ inicio:'<path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-7h6v7"/>',
+ ponto:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+ relatorios:'<path d="M4 20V10m6 10V4m6 16v-7m4 7H2"/>',
+ ajustes:'<circle cx="12" cy="12" r="3"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>'
+ };
+ document.querySelectorAll('.tabs .tab').forEach(btn=>{
+   const name=btn.dataset.page;
+   if(iconPaths[name]&&!btn.querySelector('.nav-icon')){
+     const container=document.createElement('span');container.className='nav-icon';container.setAttribute('aria-hidden','true');
+     container.innerHTML='<svg viewBox="0 0 24 24">'+iconPaths[name]+'</svg>';
+     btn.prepend(container);
+   }
+ });
+ const section=document.getElementById('relatorios');
+ if(!section)return;
+ const composition=document.getElementById('reportBreakdown')?.closest('.panel');
+ const full=document.getElementById('fullCalcPanel');
+ const analysis=section.querySelector('.report-analysis-grid');
+ const journeys=document.getElementById('reportDayList')?.closest('.panel');
+ function wrap(target,label,subtitle,opened){
+   if(!target||target.closest('.mobile-report'))return;
+   const d=document.createElement('details');d.className='mobile-report';d.open=opened;
+   const sum=document.createElement('summary');sum.innerHTML='<span>'+label+'<span class="section-summary">'+subtitle+'</span></span>';
+   target.parentNode.insertBefore(d,target);d.append(sum,target);
+ }
+ wrap(composition,'Composição dos adicionais','Noturno, extras e feriados',true);
+ wrap(full,'Demonstrativo completo','Horas, impostos e memória de cálculo',false);
+ wrap(analysis,'Análise semanal e registros','Distribuição e pendências',false);
+ wrap(journeys,'Jornadas do mês','Detalhes por dia',false);
+ function ensureOpen(id){const d=document.getElementById(id)?.closest('details.mobile-report');if(d)d.open=true}
+ document.addEventListener('click',function(e){
+  const b=e.target.closest('#showPayCalc,#showReportCalc,#showMonthCalc');if(b)ensureOpen('fullCalcPanel');
+  const record=e.target.closest('[data-audit]');if(record)ensureOpen('reportDayList');
+ },true);
+ // Avoid drawing hidden, duplicated headings at the top of the report in mobile.
+ const mq=window.matchMedia('(max-width:700px)');
+ const restore=()=>{document.querySelectorAll('.mobile-report').forEach(d=>{
+    if(!mq.matches)d.open=true;
+  })};
+ restore();if(mq.addEventListener)mq.addEventListener('change',restore);
+})();
+</script>
+</body></html>
