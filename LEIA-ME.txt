@@ -1,9 +1,8 @@
-Meu Ponto v1.9.5.1 revisada — Desktop + Mobile
+Meu Ponto v1.9.5.2
 
-Corrigida a largura máxima do desktop (1200px), organização tablet e mobile, contraste dos botões e espaço seguro da barra inferior.
+Correções visuais mobile: painel de jornada compacto, sem cartão de registro duplicado na tela Início, barra inferior reduzida e área segura diferenciada no modo instalado.
 
-Para publicar, substitua index.html, version.json e sw.js (caso utilize PWA).
-Não sobrescreva config.js, não execute SQL e não limpe o armazenamento local.
-Antes de atualizar, exporte backup dos registros.
+Arquivos alterados: index.html, version.json e sw.js.
 
-Versão exibida no aplicativo: v1.9.5.1. Revisão visual da mesma versão.
+Preserve config.js no GitHub. Faça backup dos registros antes de atualizar.
+A lógica de cálculos e a estrutura do Supabase não foram alteradas.
