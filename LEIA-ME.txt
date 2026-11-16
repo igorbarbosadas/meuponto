@@ -1,8 +1,2 @@
-Meu Ponto v1.9.5.2
-
-Correções visuais mobile: painel de jornada compacto, sem cartão de registro duplicado na tela Início, barra inferior reduzida e área segura diferenciada no modo instalado.
-
-Arquivos alterados: index.html, version.json e sw.js.
-
-Preserve config.js no GitHub. Faça backup dos registros antes de atualizar.
-A lógica de cálculos e a estrutura do Supabase não foram alteradas.
+Meu Ponto v1.9.5.3: início mais leve no celular, escala e resumo financeiro recolhíveis, barra de navegação elevada acima do indicador inferior do iPhone.
+Publique index.html, version.json e sw.js. Preserve config.js. Faça backup dos registros antes de atualizar.
