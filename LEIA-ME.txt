@@ -1,1 +1,3 @@
-Meu Ponto v1.9.5.4. Alterados: index.html, version.json e sw.js. Manter config.js e banco Supabase atuais. Exportar backup antes de publicar. A tela Início contém um card principal mínimo e um painel compacto de acompanhamento.
+Meu Ponto v1.9.6 — estabilização
+Substitua index.html, version.json e sw.js. Preserve config.js existente e banco.
+Faça backup JSON antes de atualizar. Consulte TESTES.md.
