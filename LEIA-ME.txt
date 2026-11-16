@@ -1,7 +1,7 @@
-Meu Ponto v1.9.3
+Meu Ponto v1.9.4
 
-Mudanca: legenda, percentuais e descricoes da barra de composicao dos ganhos variaveis.
+Correções: previsão de saída em entradas fora do horário contratado, extras antecipadas, card principal compacto e navegação inferior no iPhone.
 
-No GitHub substitua index.html, version.json e sw.js. Preserve o config.js atual e os registros.
-README.md apresenta o aplicativo sem capturas de tela.
-Nao ha mudancas no Supabase ou em formulas salariais.
+Publicar index.html, version.json e sw.js. Preserve config.js e os dados do Supabase.
+
+Faça backup antes da atualização. A lógica financeira ainda requer confronto com espelho e contracheque reais.
