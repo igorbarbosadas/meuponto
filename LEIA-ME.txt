@@ -1,2 +1,1 @@
-Meu Ponto v1.9.5.3: início mais leve no celular, escala e resumo financeiro recolhíveis, barra de navegação elevada acima do indicador inferior do iPhone.
-Publique index.html, version.json e sw.js. Preserve config.js. Faça backup dos registros antes de atualizar.
+Meu Ponto v1.9.5.4. Alterados: index.html, version.json e sw.js. Manter config.js e banco Supabase atuais. Exportar backup antes de publicar. A tela Início contém um card principal mínimo e um painel compacto de acompanhamento.
