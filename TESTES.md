@@ -1,7 +1,5 @@
-# Conferências v1.10.7
+# Validação v1.10.8
 
-- Sintaxe dos blocos JavaScript e consistência da versão conferidas automaticamente.
-- ZIP testado por integridade de arquivos.
-- Mudanças restritas ao fluxo de autenticação, apresentação de erro e versão.
-- Pendente: teste real no Supabase com usuário não confirmado, reenvio e clique no e-mail em navegador diferente.
-- Pendente: teste de login, recuperação de senha e sincronização em dispositivo real.
+- Verificação sintática JavaScript: executar node --check do bloco JS.
+- Conferência estática: proibição de gravar no cache legado global, desativação de exclusão total/importação e bloqueio de gravações antes de leitura remota.
+- Pendente: integração real com duas contas no Supabase, recuperação de dados e teste no iPhone.
