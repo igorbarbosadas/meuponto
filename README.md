@@ -1,15 +1,7 @@
-# Meu Ponto v1.10.9
+# Meu Ponto v1.11.0
 
-Correção de isolamento e inicialização de novas contas.
+Versão de transição para persistência no Supabase. Os registros são carregados exclusivamente da linha pertencente ao usuário autenticado. A gravação usa comparação de revisão e só confirma após resposta do servidor.
 
-- Contas sem registros no Supabase iniciam sem salário, divisor, horários, dias ou município definidos.
-- Nenhum cache local de conta sem alterações pendentes é usado como perfil de inicialização.
-- Contas existentes seguem carregando suas próprias configurações do Supabase.
-- O e-mail autenticado aparece em Conta e sincronização.
-- A primeira batida exige salário, divisor e escala configurados.
-- A leitura de nuvem usa o ID da conta capturado no início de cada operação.
-- Horário de última sincronização é separado por conta.
-- Cache local antigo e cópias de recuperação não são apagados.
+ATENÇÃO: sem conexão novas alterações não são confirmadas. Não feche a página enquanto uma alteração estiver pendente. As cópias legadas do navegador não são apagadas, mas não são carregadas automaticamente. Fotos não são armazenadas no Supabase.
 
-Publique index.html, sw.js e version.json, mantendo config.js atual.
-Não execute SQL nem apague caches ou registros antes dos testes.
+Publicação: atualize index.html, version.json e sw.js. Preserve config.js. Não é necessário SQL de migração para a tabela atual. Antes de publicar, exporte um backup da conta antiga. Verifique no Supabase que cada usuário possui sua própria linha em ponto_state, protegida por RLS.
