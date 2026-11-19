@@ -1,5 +1,3 @@
-Meu Ponto v1.10.4
+Meu Ponto v1.10.5
 
-Ajustes: os campos de horário padrão foram movidos de Salário e regras de cálculo para Minhas escalas > Horário fixo semanal. Entrada, saída e intervalo são salvos junto com os dias da semana. Rodízio e coberturas continuam independentes.
-
-Publicação: atualizar index.html, version.json e sw.js. Preservar config.js e exportar backup dos registros antes da publicação.
+Feriados nacionais aplicados automaticamente. Estado e município de trabalho selecionáveis, incluindo busca de municípios pelo IBGE quando há conexão. Os feriados estaduais e municipais precisam ser confirmados/cadastrados. Não substitua config.js; o arquivo não faz parte deste pacote.
