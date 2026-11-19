@@ -1,7 +1,7 @@
-# Meu Ponto v1.10.2
+# Meu Ponto v1.10.3
 
-Edição do rodízio em formato compacto. Cada semana tem três campos para aplicar entrada, saída e intervalo em lote, aos dias trabalhados, de segunda a sexta ou a todos os dias. A edição individual fica recolhida e serve para exceções como o sábado. Mudanças no número de semanas preservam o rascunho até o salvamento. A estrutura dos dados, cálculo financeiro e autenticação não foram alterados.
+Novidades: seleção guiada dos editores de escala (semanal, semanas alternadas, cobertura, exceção), preservando escalas existentes; calendário com nome e tipo de feriado (nacional, estadual, municipal, personalizado), e identificação de data confirmada ou sugerida; cadastro manual do tipo do feriado.
 
-Atualize index.html, version.json e sw.js. Não substitua config.js. Exporte backup antes de publicar.
+Selecionar um editor NÃO ativa nem desativa uma escala. Para alterar os cálculos, use o botão de salvar da configuração escolhida. Feriados sugeridos não entram no cálculo antes de confirmação. Sugestões estaduais disponíveis somente para SP e MA nesta versão.
 
-O editor mostra uma semana por vez com seletor de semanas. Todas permanecem disponíveis para salvar em conjunto.
+Para publicar, substitua index.html, sw.js e version.json. Preserve config.js e exporte um backup antes da atualização.

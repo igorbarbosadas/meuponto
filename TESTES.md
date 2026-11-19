@@ -1,6 +1,5 @@
-# Testes da v1.10.2
+# Revisão v1.10.3
 
-- Validação estática: sintaxe JavaScript dos scripts embutidos no index.html e do sw.js.
-- Estrutura: campos semanais para entrada/saída/intervalo, seleção de alcance e detalhe por dia.
-- Preservação: mesmas chaves `shiftCycle.weeks` e `settings`, sem migração ou alteração de Supabase.
-- Pendentes: testes visuais interativos no Chrome/iPhone, sincronização real Supabase e reprodução de todos os cálculos.
+Verificados: sintaxe JavaScript em todos os blocos, versão em HTML/service worker/manifesto de versão, integridade do ZIP. A classificação de feriados confirmados usa a lista já existente, e os sugeridos são apenas informativos.
+
+Testes pendentes: fluxo completo de edição em Chrome e Safari, envio/retorno Supabase, uso multiusuário e conferência de cálculos. O navegador automatizado deste ambiente bloqueou a navegação local.
