@@ -1,1 +1,1 @@
-Meu Ponto v1.11.5. Leia README.md antes de publicar. Preserve config.js.
+Meu Ponto v1.12.7. Leia README.md antes de publicar. Preserve o config.js atual e faça backup dos registros.

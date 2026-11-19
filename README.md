@@ -1,7 +1,3 @@
-# Meu Ponto v1.12.6
+# Meu Ponto v1.12.7
 
-- Gráfico mensal reformulado para composição salarial por competência.
-- Cada mês agora mostra duas torres: ganhos e descontos.
-- Inclusão de resumo com ganhos totais, descontos totais e líquido estimado.
-- Inclusão de filtros individuais por subcategoria (salário-base, noturno, extras, feriados, DSR, INSS, IRRF e descontos personalizados).
-- O bloco “Ganhos acumulados até agora” continua separado, mostrando apenas o que já foi registrado até a data da consulta.
+Gráfico de composição salarial com meses sem registros marcados como Sem dados, seleção de competência na coluna, subcategorias filtráveis e totais originais preservados. Sem alteração do banco Supabase ou dos dados armazenados.

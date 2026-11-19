@@ -1,7 +1,8 @@
-# Testes da v1.12.6
+# Meu Ponto v1.12.7: verificação
 
-- Validar sintaxe do script principal do index.html.
-- Conferir troca do gráfico “Ganhos mês a mês” para “Composição salarial mês a mês”.
-- Confirmar exibição das duas torres por competência: ganhos e descontos.
-- Validar funcionamento dos filtros individuais por subcategoria.
-- Confirmar atualização da versão para 1.12.6 em interface, service worker e version.json.
+- Meses sem jornadas não recebem salário-base nem descontos fictícios.
+- Clicar em uma coluna existente seleciona a competência e atualiza seus detalhes.
+- Ocultar subcategorias altera apenas visualização, nunca totais oficiais.
+- Para meses com registros, números são estimativas de folha e podem usar parâmetros atuais quando faltam snapshots.
+- Sintaxe JavaScript e integridade ZIP verificadas automaticamente.
+- Pendente: testes reais no navegador e Supabase.
