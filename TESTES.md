@@ -1,19 +1,17 @@
-# Meu Ponto v1.9.9 — conferência do demonstrativo
+# Meu Ponto v1.10.0 – validações
 
-Os valores do aplicativo são estimativas. A v1.9.9 adiciona TOTAL ESTIMADO DO DIA = parcela normal + parcelas variáveis. A parcela normal já faz parte do salário-base mensal.
+- Sintaxe dos quatro scripts embutidos aprovada pelo Node.js.
+- Teste isolado das regras: semana 1, semana 2, sábado, folga e cobertura temporária.
+- A regra de feriado por instante de trabalho já existia na v1.9.9. Agora há opção de configuração pela data de início da jornada.
+- Sugestões nacionais de feriados são geradas localmente; SP e MA recebem sugestões estaduais verificadas. Para outras UFs, cadastro manual estadual nesta versão.
+- Não foi possível executar o aplicativo no navegador de testes: acesso a localhost bloqueado.
+- Não houve teste integrado com Supabase nem comparação com contracheque.
 
-## Conferência das capturas de 16 a 18/11/2026
+## Testes manuais necessários
 
-| Dia | Entrada–saída | Efetivas (intervalo de 1h) | Parcela normal | Noturno | Extras | Total variável | Total do dia |
-|---|---|---|---:|---:|---:|---:|---:|
-| 16/11 | 20:47–05:30 | 7h43 | R$ 130,94 | R$ 26,91 | R$ 38,46 | R$ 65,37 | R$ 196,31 |
-| 17/11 | 20:49–05:39 | 7h50 | R$ 130,94 | R$ 27,54 | R$ 42,02 | R$ 69,56 | R$ 200,50 |
-| 18/11 | 20:53–05:42 | 7h49 | R$ 130,94 | R$ 27,75 | R$ 41,81 | R$ 69,57 | R$ 200,51 |
-
-**Pendência de regra trabalhista:** na configuração atual (modo baseado em horário), o aplicativo considera horas antes do início contratual e após o fim contratual como extras. A classificação exige confirmação com acordo/espelho de ponto.
-
-**Pendência de intervalo:** os horários exatos da pausa não foram informados. A distribuição de adicional noturno e extras assume o intervalo automático estimado pelo aplicativo, e pode divergir da folha.
-
-A sintaxe JavaScript foi verificada. Não foi possível testar autenticação nem sincronização real com Supabase.
-
-O total variável de 18/11 pode apresentar diferença de R$ 0,01 quando comparado à soma das parcelas mostradas, porque o aplicativo acumula frações antes de arredondar na exibição.
+1. Faça backup e entre na conta existente.
+2. Configure as semanas 1 e 2 com data inicial em uma segunda-feira e veja o calendário da terceira semana.
+3. Cadastre cobertura temporária e verifique o retorno ao rodízio.
+4. Confira feriados nacionais e estaduais e confirme apenas os aplicáveis.
+5. Simule 19/11 22:00 a 20/11 05:20, com intervalo, e confira o cálculo para os dois critérios de feriado.
+6. Faça uma batida em outro dispositivo e confirme a sincronização.
