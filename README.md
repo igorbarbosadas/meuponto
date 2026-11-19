@@ -1,4 +1,4 @@
-# Meu Ponto v1.12.5
+# Meu Ponto v1.12.6
 
 - Gráfico mensal reformulado para composição salarial por competência.
 - Cada mês agora mostra duas torres: ganhos e descontos.
