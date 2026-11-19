@@ -1,14 +1,13 @@
-# Testes de v1.11.4
+# Verificações v1.11.5
 
-- Verificação estrutural do ZIP e presença de arquivos.
-- Sintaxe do JavaScript do painel com Node.js.
-- Controle de acesso implementado no servidor, não somente na interface.
-- Renderização de e-mail e identificadores com textContent para prevenir injeção HTML.
-- Sem funções administrativas de escrita/remoção.
+- Conferir sintaxe JavaScript do painel e aplicativo.
+- Conferir estrutura e versão do ZIP.
+- Verificar que função `admin-accounts` suporta apenas `list`, `detail` e `export`.
+- Verificar autorização por UID presente na função, antes de consultas administrativas.
+- Testar no Supabase: admin pode listar/abrir/exportar.
+- Testar no Supabase: conta comum recebe HTTP 403.
+- Testar no Supabase: UID inexistente não retorna dados.
+- Testar no Supabase: alternância e logout não deixam dados de outro usuário acessíveis.
+- Testar no Supabase: nenhum registro alterado após as consultas e exportações.
 
-Pendências de homologação:
-1. Publicar a Edge Function `admin-accounts` e configurar `ADMIN_USER_IDS`.
-2. Testar acesso como administrador permitido.
-3. Testar acesso negado para usuário comum e não autenticado.
-4. Conferir que ambas as contas mostram IDs, e-mails e números de batidas corretos.
-5. Testar consulta com múltiplas páginas se houver mais de 100 contas.
+Os testes com o Supabase real não foram executados neste ambiente.

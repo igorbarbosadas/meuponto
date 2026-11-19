@@ -1,20 +1,27 @@
-# Meu Ponto v1.11.4
+# Meu Ponto v1.11.5
 
-Nova página administrativa independente `admin.html`, com consulta somente leitura das contas.
+Ampliação do painel administrativo em `admin.html`, sem alterações na estrutura `ponto_state` nem nas batidas.
 
-## Publicação no GitHub Pages
-Envie `admin.html`, `index.html`, `version.json` e `sw.js`. Preserve `config.js` que já está no repositório.
+## Recursos
+- Lista de contas com e-mail, UID, status e batidas, paginada de 100 em 100.
+- Ficha detalhada por usuário, buscada apenas após selecionar a conta.
+- Abas: Resumo, Configurações, Batidas, Feriados armazenados, Exceções.
+- Exportação JSON completa do estado da conta selecionada, mediante autorização do administrador.
+- Todas as ações são **somente leitura**. Não há exclusão, limpeza ou edição administrativas.
 
-## Configuração Supabase
-1. Supabase > Edge Functions > Secrets. Cadastre `ADMIN_USER_IDS` com o UUID do usuário administrador (coluna `auth.users.id`). Para múltiplos administradores, separe UUIDs com vírgula. NÃO use e-mails para autorização.
-2. Supabase > Edge Functions > Deploy a new function > Via Editor. Nome EXATO: `admin-accounts`. Cole o código de `supabase/functions/admin-accounts/index.ts` no editor e publique com verificação JWT habilitada (compatível com chave anon JWT existente).
-3. Acesse https://igorbarbosadas.github.io/meuponto/admin.html após entrar na conta autorizada.
+## Como publicar
+1. No GitHub Pages, atualize `admin.html`, `index.html`, `version.json` e `sw.js`.
+2. Preserve o `config.js` publicado.
+3. No Supabase, **republique** a função `admin-accounts` com o arquivo `supabase/functions/admin-accounts/index.ts` da versão 1.11.5. Não altere `delete-my-account`.
+4. Preserve o secret `ADMIN_USER_IDS` com o UUID do administrador.
+5. Acesse `https://igorbarbosadas.github.io/meuponto/admin.html` com a conta autorizada.
 
 ## Segurança
-- A chave de administrador permanece exclusivamente na Edge Function.
-- A lista de contas só é retornada após verificação de token e de `ADMIN_USER_IDS` no servidor.
-- Nenhuma operação de exclusão ou alteração é disponibilizada nesta versão.
-- Paginação com 100 contas por página. Busca e filtros operam sobre a página atual.
-- Contas excluídas não podem ser listadas com `auth.admin.listUsers` sem trilha de auditoria prévia.
-- Esta entrega não altera a tabela `ponto_state`, seus registros nem a Edge Function `delete-my-account`.
-- Testes reais com o Supabase e autorização entre contas ainda são necessários.
+A função confirma o token do Supabase e exige que o UID esteja em `ADMIN_USER_IDS` antes de acessar dados de qualquer usuário. Nunca coloque `SUPABASE_SERVICE_ROLE_KEY` no GitHub ou navegador. Nenhum SQL necessário.
+
+A exportação JSON contém dados pessoais e de jornada. Guarde em local protegido e exclua cópias de teste quando não forem mais necessárias. O painel não mostra senhas ou tokens.
+
+## Limitações
+- A busca e os filtros atuam sobre a página atual de até 100 contas.
+- Feriados automáticos gerados em tempo de execução podem não aparecer no JSON `holidays`.
+- Ainda requer testes completos com Supabase real, autenticação administrativa e conta comum.
