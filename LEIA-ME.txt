@@ -1,3 +1,1 @@
-Meu Ponto v1.9.6 — estabilização
-Substitua index.html, version.json e sw.js. Preserve config.js existente e banco.
-Faça backup JSON antes de atualizar. Consulte TESTES.md.
+Meu Ponto v1.9.9. Atualize index.html, sw.js e version.json. Mantenha o config.js existente. O cálculo da jornada inclui total diário informativo; sem mudanças no banco.
