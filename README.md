@@ -1,8 +1,8 @@
-# Meu Ponto v1.12.3
+# Meu Ponto v1.12.4
 
-- Relatório renomeado para Ganhos acumulados até agora.
-- Mostra exclusivamente ganhos vinculados a batidas já registradas, sem dias futuros.
-- Comparativo de seis competências em colunas empilhadas por categoria, com modos Bruto e Líquido.
-- O modo líquido parcial desconta somente descontos personalizados conhecidos. INSS/IRRF e DSR não entram no parcial sem fechamento confirmado.
-- Não altera banco, sincronização, permissões, autenticação ou cálculo original das jornadas.
-- Publique index.html, version.json e sw.js. Preserve config.js e admin.html.
+- Relatórios simplificados: ganhos registrados, comparativo mensal, resumo salarial, detalhamentos opcionais.
+- Corrigida divergência causada pela sobrescrita do líquido calculado com descontos personalizados.
+- Uma função compartilhada calcula bruto, INSS, IRRF e descontos para resumo, detalhamento e auditoria.
+- Colunas empilhadas mês a mês separadas dos ganhos acumulados, com modos Bruto e Após descontos.
+- Nenhum registro existente ou esquema Supabase modificado.
+- Preserve o config.js do GitHub e as funções do Supabase.
