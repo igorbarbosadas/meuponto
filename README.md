@@ -1,5 +1,11 @@
-Meu Ponto v1.11.8
+Meu Ponto v1.11.9
 
-Alteração visual: indicador de status da sincronização verde quando os dados foram carregados ou gravados com sucesso. Erros continuam em vermelho e processos em andamento em laranja.
+Novidades:
+- Escolha explícita de dias no rodízio, com resumo dos dias de destino.
+- Congelamento dos parâmetros de cálculo por jornada concluída ao alterar configurações, inclusive para batidas antigas sem snapshot.
+- Projeção do fechamento mensal separada dos valores já registrados, baseada na média de jornadas concluídas.
+- Descontos personalizados mensais ou por competência, abatidos após os descontos legais estimados.
 
-Arquivos modificados: index.html, sw.js, version.json, README.md e TESTES.md. A lógica de armazenamento, as configurações e o Supabase não foram alterados. Preserve o config.js existente no repositório.
+Arquivos a publicar: index.html, version.json e sw.js. Preserve config.js e admin.html.
+O app só confirma salvamento após resposta do Supabase. Não é necessário SQL.
+Limites: projeção usa média histórica da competência; não substitui folha. Fotos de comprovantes não são persistidas no servidor.
