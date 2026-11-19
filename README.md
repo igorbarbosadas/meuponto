@@ -1,7 +1,5 @@
-Meu Ponto v1.12.1
+Meu Ponto v1.12.2
 
-Atualização de relatórios: previsão completa de ganhos até o último dia de cada mês, com salário-base, adicional noturno, horas extras, feriados, DSR, INSS, IRRF e descontos personalizados.
+Relatórios: o gráfico principal de composição salarial agora acompanha a competência selecionada e agrupa categorias de ganhos. O controle Bruto / Líquido permite alternar, sem gravar preferências nem afetar registros. Na visualização líquida, aparecem INSS, IRRF e outros descontos, com o valor líquido projetado. Na bruta, aparecem os ganhos e bruto projetado.
 
-Gráficos: composição do bruto mensal e ganhos por jornada concluída. O total da jornada representa a parcela normal atribuída à jornada somada aos adicionais; essa parcela normal não deve ser somada novamente ao salário-base.
-
-Publicar index.html, version.json e sw.js. Preservar config.js, admin.html e dados do Supabase. Sem alterações de esquema ou políticas RLS.
+Os demais cálculos, tela administrativa, tabelas Supabase e configuração de autenticação foram preservados. Publicar index.html, version.json e sw.js; preservar config.js e admin.html.
