@@ -1,13 +1,10 @@
-# Meu Ponto v1.11.6
+Meu Ponto v1.11.7
 
-Atualização focada em segurança na abertura de sessão e isolamento visual de contas.
+Correções:
+- Corrigida variável fora do escopo em renderScaleOverview(), que interrompia o aplicativo com "d is not defined".
+- Configuração pública e biblioteca Supabase carregadas em paralelo para reduzir o tempo de inicialização quando a rede permite.
+- Relógio e atualização contínua não recalculam a interface protegida antes de validar a conta.
 
-- A interface de dados permanece bloqueada até uma leitura bem-sucedida do Supabase para a conta autenticada.
-- Falha de leitura oferece nova tentativa, sem abrir um painel vazio que possa parecer perda de registros.
-- O botão de reconexão repete a leitura para a conta atual.
-- O formulário de login é restaurado ao sair da conta.
-- Ajustados textos e valores de exemplo que davam a impressão de ser a escala de todos os usuários.
-- Nenhuma mudança em tabela ou políticas RLS.
-- `config.js` não é incluído. Preserve o arquivo já publicado.
+Segurança: mantém bloqueio da interface enquanto a conta não tiver dados carregados do Supabase. Não modifica tabela, políticas RLS ou dados gravados.
 
-A gravação ainda usa fila na memória da página. Falha de conexão impede confirmação. Testes em Supabase real não foram realizados no ambiente de geração.
+Publicar index.html, sw.js e version.json. Preservar config.js e admin.html existentes.
