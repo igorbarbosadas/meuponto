@@ -1,5 +1,8 @@
-Meu Ponto v1.12.2
+# Meu Ponto v1.12.3
 
-Relatórios: o gráfico principal de composição salarial agora acompanha a competência selecionada e agrupa categorias de ganhos. O controle Bruto / Líquido permite alternar, sem gravar preferências nem afetar registros. Na visualização líquida, aparecem INSS, IRRF e outros descontos, com o valor líquido projetado. Na bruta, aparecem os ganhos e bruto projetado.
-
-Os demais cálculos, tela administrativa, tabelas Supabase e configuração de autenticação foram preservados. Publicar index.html, version.json e sw.js; preservar config.js e admin.html.
+- Relatório renomeado para Ganhos acumulados até agora.
+- Mostra exclusivamente ganhos vinculados a batidas já registradas, sem dias futuros.
+- Comparativo de seis competências em colunas empilhadas por categoria, com modos Bruto e Líquido.
+- O modo líquido parcial desconta somente descontos personalizados conhecidos. INSS/IRRF e DSR não entram no parcial sem fechamento confirmado.
+- Não altera banco, sincronização, permissões, autenticação ou cálculo original das jornadas.
+- Publique index.html, version.json e sw.js. Preserve config.js e admin.html.
