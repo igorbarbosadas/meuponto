@@ -1,6 +1,6 @@
-# Testes da v1.10.1
+# Testes da v1.10.2
 
-- Sintaxe de blocos JavaScript: verificada com node --check.
-- Integridade do arquivo ZIP: verificada.
-- Verificação estática de cobertura sem término e fluxo de encerramento manual: concluída.
-- Não realizados: testes reais em iOS, integração com Supabase, inspeção visual em navegador e validação financeira de múltiplos turnos.
+- Validação estática: sintaxe JavaScript dos scripts embutidos no index.html e do sw.js.
+- Estrutura: campos semanais para entrada/saída/intervalo, seleção de alcance e detalhe por dia.
+- Preservação: mesmas chaves `shiftCycle.weeks` e `settings`, sem migração ou alteração de Supabase.
+- Pendentes: testes visuais interativos no Chrome/iPhone, sincronização real Supabase e reprodução de todos os cálculos.

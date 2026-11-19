@@ -1,12 +1,7 @@
-# Meu Ponto v1.10.1
+# Meu Ponto v1.10.2
 
-Atualização de interface para configurar rodízios e coberturas com menos esforço.
+Edição do rodízio em formato compacto. Cada semana tem três campos para aplicar entrada, saída e intervalo em lote, aos dias trabalhados, de segunda a sexta ou a todos os dias. A edição individual fica recolhida e serve para exceções como o sábado. Mudanças no número de semanas preservam o rascunho até o salvamento. A estrutura dos dados, cálculo financeiro e autenticação não foram alterados.
 
-- Cobertura com término opcional. Quando não há data final, fica ativa até encerramento manual.
-- Encerramento registra data final em vez de remover a cobertura.
-- Validação de datas sobrepostas entre coberturas.
-- Rodízio apresentado em linhas por dia, com visual diferente para folgas.
-- Organização dos ajustes em seções recolhíveis.
-- Mantido o critério de feriado configurável por data de entrada ou horas efetivas.
+Atualize index.html, version.json e sw.js. Não substitua config.js. Exporte backup antes de publicar.
 
-Atualização: publique index.html, version.json e sw.js. Preserve config.js. Faça backup dos registros.
+O editor mostra uma semana por vez com seletor de semanas. Todas permanecem disponíveis para salvar em conjunto.
