@@ -1,1 +1,1 @@
-Meu Ponto v1.9.9. Atualize index.html, sw.js e version.json. Mantenha o config.js existente. O cálculo da jornada inclui total diário informativo; sem mudanças no banco.
+Meu Ponto v1.11.3. Publique index.html, version.json e sw.js. Preserve config.js e faça backup antes de atualizar.
