@@ -1,1 +1,1 @@
-Meu Ponto v1.11.3. Publique index.html, version.json e sw.js. Preserve config.js e faça backup antes de atualizar.
+Meu Ponto v1.11.4. Publique index.html, version.json e sw.js. Preserve config.js e faça backup antes de atualizar.

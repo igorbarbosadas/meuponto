@@ -1,5 +1,5 @@
-/* Meu Ponto v1.11.3 — escopo exclusivo deste aplicativo. */
-const VERSION='1.11.3';
+/* Meu Ponto v1.11.4 — escopo exclusivo deste aplicativo. */
+const VERSION='1.11.4';
 const SHELL='meuponto-shell-'+VERSION+'-layout-r3';
 const PUBLIC='meuponto-public-'+VERSION+'-layout-r3';
 const APP_FILES=['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png'];
@@ -33,6 +33,8 @@ self.addEventListener('fetch',event=>{
  }
  const scope=new URL(self.registration.scope);
  if(!url.pathname.startsWith(scope.pathname))return;
+ // Painel administrativo: nunca armazenar respostas HTML no service worker.
+ if(url.pathname.endsWith('/admin.html'))return;
  // Consultas de versão sempre pela rede; offline, não exibir atualização incorreta.
  if(url.pathname.endsWith('/version.json'))return;
  // config.js contém apenas valores PUBLICÁVEIS. Rede primeiro; cópia offline apenas para reabrir a interface.
