@@ -1,13 +1,13 @@
-# Verificações v1.11.5
+# Validação v1.11.6
 
-- Conferir sintaxe JavaScript do painel e aplicativo.
-- Conferir estrutura e versão do ZIP.
-- Verificar que função `admin-accounts` suporta apenas `list`, `detail` e `export`.
-- Verificar autorização por UID presente na função, antes de consultas administrativas.
-- Testar no Supabase: admin pode listar/abrir/exportar.
-- Testar no Supabase: conta comum recebe HTTP 403.
-- Testar no Supabase: UID inexistente não retorna dados.
-- Testar no Supabase: alternância e logout não deixam dados de outro usuário acessíveis.
-- Testar no Supabase: nenhum registro alterado após as consultas e exportações.
+Checagens estáticas: versão interna, integridade ZIP, JavaScript e existência de arquivos.
 
-Os testes com o Supabase real não foram executados neste ambiente.
+Casos que exigem validação manual com o Supabase real:
+1. Conta principal: abrir, aguardar os dados e confirmar as seis batidas existentes.
+2. Conta recém-criada: nenhuma batida e nenhum salário/escala inicial.
+3. Desconectar internet antes de abrir uma sessão: manter tela bloqueada, mostrar botão de reconexão.
+4. Reconectar e tentar novamente: liberar tela somente após leitura da própria conta.
+5. Registrar batida e aguardar confirmação do servidor antes de sair.
+6. Conferir RLS: uma conta comum não pode ler nem escrever `ponto_state` de outra.
+
+Não afirmar homologação antes dessas verificações.
