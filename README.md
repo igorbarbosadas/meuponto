@@ -1,31 +1,18 @@
-# Meu Ponto v1.11.1
+# Meu Ponto v1.11.2
 
-Correção focada na remoção segura de contas e limpeza dos dados da conta atual.
+Correção do bloqueio indevido ao excluir uma conta.
 
-## Arquivos para publicar no GitHub Pages
+## O que mudou
+- Aguarda leituras da nuvem em andamento antes de verificar a exclusão.
+- Faz uma nova leitura do Supabase caso a sessão ainda não tenha sido validada.
+- Verifica a senha em um cliente Supabase temporário e isolado, sem substituir a sessão principal.
+- Exibe mensagens diferentes para gravações pendentes, conexão falha, sessão expirada e função ausente.
+- Mantém a exclusão limitada ao usuário autenticado e preserva as demais contas.
 
-- `index.html`
-- `version.json`
-- `sw.js`
+## Publicação
+Atualize `index.html`, `version.json` e `sw.js`. Preserve o arquivo `config.js` existente.
 
-Preserve o `config.js` atual. O código NÃO inclui chave administrativa no navegador.
+A exclusão permanente depende da Edge Function `delete-my-account` publicada no mesmo projeto Supabase. O código da função está incluído em `supabase/functions/delete-my-account/index.ts`. A função precisa ser instalada separadamente no painel do Supabase. Não coloque a chave `service_role` no navegador.
 
-## Função de exclusão permanente
-
-A exclusão definitiva exige instalar no MESMO projeto Supabase a Edge Function `delete-my-account`, usando o arquivo `supabase/functions/delete-my-account/index.ts`.
-
-Pelo painel Supabase, vá a Edge Functions, crie uma função com nome `delete-my-account`, cole o código e publique. Mantenha verificação de JWT habilitada. O Supabase fornece as variáveis de ambiente do projeto (`SUPABASE_URL`, `SUPABASE_ANON_KEY` e `SUPABASE_SERVICE_ROLE_KEY`). Não copie estas chaves ao `index.html`.
-
-A função autoriza somente a sessão autenticada, usa o ID obtido pelo próprio servidor, apaga a linha `ponto_state` da conta e chama o administrador Auth para eliminar o usuário. Se o Auth falhar, a função tenta restaurar os registros que foram removidos. Os dados de outras contas não são consultados nem alterados.
-
-IMPORTANTE: a implementação usa duas operações diferentes (banco e Auth) e não é uma transação única. Mantenha backup independente antes de testar. A função foi revisada estaticamente, mas ainda precisa de teste real no Supabase.
-
-## Teste recomendado
-
-1. Exportar o backup JSON da conta principal.
-2. Criar uma conta nova de teste.
-3. Na conta de teste, usar `Limpar os dados desta conta` e confirmar que os campos e batidas ficaram vazios.
-4. Entrar na conta principal e conferir que os dados permanecem.
-5. Na conta de teste, usar `Excluir minha conta definitivamente`, com senha e confirmação EXCLUIR.
-6. Verificar no Supabase Authentication > Users que só a conta de teste foi excluída.
-7. Validar a conta principal novamente.
+## Cuidados
+Teste apenas com uma conta descartável e confira o resultado em Authentication > Users e Table Editor > ponto_state. Guarde o backup dos dados importantes. A exclusão no Auth e na tabela não é transação atômica.

@@ -1,9 +1,9 @@
-# Verificações v1.11.1
-- [x] Sintaxe JavaScript estática verificada com node --check
-- [x] ZIP íntegro
-- [x] UI separa limpeza de dados da exclusão permanente
-- [x] Exclusão exige senha, frase EXCLUIR, confirmação e sessão autenticada
-- [x] Edge Function usa `getUser(jwt)` e ignora user_id enviado pelo cliente
-- [ ] Teste ao vivo no Supabase, com duas contas e RLS
-- [ ] Teste do comportamento quando Auth delete falha
-- [ ] Teste visual em desktop e celular
+# Verificações v1.11.2
+- [x] JavaScript compilado sintaticamente com Node.js.
+- [x] Reautenticação usa cliente isolado, sem persistir sessão no navegador.
+- [x] Bloqueio de gravações pendentes preservado.
+- [x] Leitura periódica aguardada antes da verificação.
+- [x] ZIP íntegro e número interno da versão atualizado.
+- [ ] Fluxo real de exclusão usando Supabase de teste e a Edge Function publicada.
+- [ ] Verificação das políticas RLS com duas contas reais.
+- [ ] Testes de interface em navegador e iPhone.
