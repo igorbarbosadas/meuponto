@@ -1,9 +1,9 @@
-# Validação v1.11.0
-
-- Verificação de sintaxe JavaScript: realizada em Node.js.
-- Integridade do pacote: verificada.
-- Revisão estática da leitura remota, gravação CAS e isolamento por user_id: realizada.
-- Testes reais de autenticação, RLS, latência e concorrência em navegador/Supabase: NÃO realizados.
-- Fotos de comprovantes: continuam apenas em memória na sessão, sem persistência remota.
-- A gravação por toda a UI ainda é otimista: após clicar, aguarde 'Salvo no servidor'.
-- Caso a rede falhe durante envio, não feche a página antes de exportar backup ou reexecutar a sincronização.
+# Verificações v1.11.1
+- [x] Sintaxe JavaScript estática verificada com node --check
+- [x] ZIP íntegro
+- [x] UI separa limpeza de dados da exclusão permanente
+- [x] Exclusão exige senha, frase EXCLUIR, confirmação e sessão autenticada
+- [x] Edge Function usa `getUser(jwt)` e ignora user_id enviado pelo cliente
+- [ ] Teste ao vivo no Supabase, com duas contas e RLS
+- [ ] Teste do comportamento quando Auth delete falha
+- [ ] Teste visual em desktop e celular
