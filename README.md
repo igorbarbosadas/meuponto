@@ -1,7 +1,5 @@
-# Meu Ponto v1.10.3
+Meu Ponto v1.10.4
 
-Novidades: seleção guiada dos editores de escala (semanal, semanas alternadas, cobertura, exceção), preservando escalas existentes; calendário com nome e tipo de feriado (nacional, estadual, municipal, personalizado), e identificação de data confirmada ou sugerida; cadastro manual do tipo do feriado.
+Ajustes: os campos de horário padrão foram movidos de Salário e regras de cálculo para Minhas escalas > Horário fixo semanal. Entrada, saída e intervalo são salvos junto com os dias da semana. Rodízio e coberturas continuam independentes.
 
-Selecionar um editor NÃO ativa nem desativa uma escala. Para alterar os cálculos, use o botão de salvar da configuração escolhida. Feriados sugeridos não entram no cálculo antes de confirmação. Sugestões estaduais disponíveis somente para SP e MA nesta versão.
-
-Para publicar, substitua index.html, sw.js e version.json. Preserve config.js e exporte um backup antes da atualização.
+Publicação: atualizar index.html, version.json e sw.js. Preservar config.js e exportar backup dos registros antes da publicação.
