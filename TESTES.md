@@ -1,7 +1,5 @@
-Meu Ponto v1.11.7 - validações
+Meu Ponto v1.11.8
 
-- Scripts JavaScript extraídos e verificados com node --check.
-- Caminho do calendário corrigido (sem variável d fora do escopo).
-- Carregamento paralelo do SDK e configuração confirmado na inspeção do código.
-- Teste automatizado com Chromium tentado, mas o ambiente bloqueou acesso a 127.0.0.1 com ERR_BLOCKED_BY_ADMINISTRATOR. Fluxo visual e autenticação real pendentes.
-- Não testado com credenciais reais, nem com dados da conta de produção.
+Verificar no aplicativo: após carregar a conta, a mensagem "Dados desta conta carregados" e o ponto devem ficar verdes. Durante carregamento, laranja. Erros, vermelho. Após salvar, "Salvo no Supabase" fica verde.
+
+Teste estático: verificação de regex de classificação, arquivos, versão e ZIP. Teste em navegador conectado ao Supabase ainda pendente.
