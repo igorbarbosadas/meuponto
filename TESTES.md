@@ -1,5 +1,13 @@
-# Validação v1.10.8
+# Validação v1.10.9
 
-- Verificação sintática JavaScript: executar node --check do bloco JS.
-- Conferência estática: proibição de gravar no cache legado global, desativação de exclusão total/importação e bloqueio de gravações antes de leitura remota.
-- Pendente: integração real com duas contas no Supabase, recuperação de dados e teste no iPhone.
+Verificações estáticas: sintaxe dos scripts, manifestos e integridade ZIP.
+
+Testes reais pendentes:
+1. Conta antiga mostra suas batidas e configurações da nuvem.
+2. Conta nova, sem linha em ponto_state, não mostra salário, horários e dias de outra conta.
+3. Conta nova não permite registrar batida sem configurar perfil.
+4. Configurar perfil na conta nova não altera o registro da conta antiga.
+5. Sair e entrar alternadamente em ambas as contas mantém dados isolados.
+6. Alterações pendentes preservadas por conta e conflitos não sobrescrevem registros.
+
+Não homologado em Supabase real nesta entrega.

@@ -1,7 +1,15 @@
-# Meu Ponto v1.10.8 · correção emergencial de isolamento
+# Meu Ponto v1.10.9
 
-Altera a leitura e gravação do cache local para chaves por ID de usuário. Não faz importação automática do cache legado meuponto_v1. Bloqueia alterações antes de leitura remota bem-sucedida. Desativa temporariamente apagar todas as batidas e importar backup. Não apaga dados antigos do browser.
+Correção de isolamento e inicialização de novas contas.
 
-ATENÇÃO: Esta atualização reduz risco, mas não garante restauração dos dados apagados anteriormente. Faça backups e verifique a tabela ponto_state no Supabase. Não execute SQL DELETE nem TRUNCATE. Testes em ambiente Supabase real pendentes.
+- Contas sem registros no Supabase iniciam sem salário, divisor, horários, dias ou município definidos.
+- Nenhum cache local de conta sem alterações pendentes é usado como perfil de inicialização.
+- Contas existentes seguem carregando suas próprias configurações do Supabase.
+- O e-mail autenticado aparece em Conta e sincronização.
+- A primeira batida exige salário, divisor e escala configurados.
+- A leitura de nuvem usa o ID da conta capturado no início de cada operação.
+- Horário de última sincronização é separado por conta.
+- Cache local antigo e cópias de recuperação não são apagados.
 
-Publique index.html, version.json e sw.js. Preserve config.js.
+Publique index.html, sw.js e version.json, mantendo config.js atual.
+Não execute SQL nem apague caches ou registros antes dos testes.
