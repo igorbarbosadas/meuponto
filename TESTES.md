@@ -1,7 +1,3 @@
-Meu Ponto v1.10.5 - validações estáticas
-
-- Feriados nacionais calculados sem confirmação e sem gravação redundante.
-- Localidade escolhida por UF e município.
-- Feriados estaduais/municipais exigem confirmação ou cadastro.
-- Motor de cálculo e calendário utilizam mesma função de verificação de feriado.
-- Testes completos em navegador e sincronização Supabase real ainda pendentes.
+Verificações: sintaxe JavaScript com node --check; ZIP; leitura estática de fluxos.
+Pendentes: testes integrados com Supabase real e navegação no celular.
+Localidades verificadas: SP (9 julho), MA (28 julho), Guarulhos/SP (Corpus Christi e 8 dezembro). Outras cidades exigem cadastro manual.

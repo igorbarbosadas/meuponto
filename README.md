@@ -1,3 +1,5 @@
-Meu Ponto v1.10.5
+Meu Ponto v1.10.6
 
-Feriados nacionais aplicados automaticamente. Estado e município de trabalho selecionáveis, incluindo busca de municípios pelo IBGE quando há conexão. Os feriados estaduais e municipais precisam ser confirmados/cadastrados. Não substitua config.js; o arquivo não faz parte deste pacote.
+Ajustes: critério de hora extra explicado corretamente; feriados locais organizados por local e classificação; sugestões municipais verificadas de Guarulhos (Corpus Christi e 8 de dezembro); sem alterar registros, políticas RLS ou configuração Supabase.
+
+Arquivos para atualizar: index.html, version.json, sw.js. Preservar config.js e fazer backup dos dados.
