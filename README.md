@@ -1,19 +1,18 @@
-# Meu Ponto v1.12.9
+# Meu Ponto v1.12.10
 
 ## Alterações desta versão
-- Adicionadas configurações do ciclo da folha: dia de fechamento, pagamento único ou vale + salário, datas e valor do vale.
-- Incluída prévia do período da folha. Exemplo: fechamento no dia 15, período de 15/11/2026 a 15/12/2026.
-- O relatório mensal continua organizado por mês-calendário. A configuração do ciclo da folha ainda não muda a competência dos gráficos e cálculos.
-- O registro manual agora aceita batidas retroativas, inclusive quando existem batidas posteriores. O registro rápido continua exigindo a sequência normal.
-- O acompanhamento da jornada mostra horas trabalhadas, horas extras e horas em feriado.
-- O menu inferior do celular ganhou uma ação de ponto que muda entre entrada, intervalo, retorno e saída.
-- Ajustes de rolagem horizontal em tabelas e conteúdos do relatório no celular.
-- Textos de sincronização reduzidos: carregando, dados carregados, salvando, salvo e erro.
+- O termo "vale" foi substituído por "adiantamento" na configuração de pagamento.
+- O valor do adiantamento usa máscara monetária brasileira, no formato R$ 1.592,22.
+- Quando a data de pagamento configurada for dia 31 e o mês não tiver 31 dias, o pagamento é considerado no último dia do mês.
+- A seção de fechamento da folha e pagamento tem botão próprio para salvar.
+- Os campos do fechamento da folha são preservados automaticamente como rascunho local durante a digitação. Se a página recarregar antes da sincronização, o rascunho é recuperado.
+- O rascunho é mantido até que os valores correspondentes sejam confirmados na configuração recebida da conta.
+- Mantida a compatibilidade com a configuração interna `advance_salary` e com os campos existentes. Nenhuma migração de dados foi necessária.
 
 ## Preservação de dados
-- Não foram alterados registros existentes nem tabelas do Supabase.
-- As novas preferências da folha são gravadas no objeto de configurações da conta conectada.
-- Os registros de ponto continuam sendo salvos no Supabase, sem migração destrutiva.
+- Nenhum registro de ponto existente foi removido ou migrado.
+- As preferências novas continuam no objeto de configurações da conta.
+- O rascunho temporário é salvo no armazenamento local do navegador, separado por conta.
 
 ## Publicação
 Substitua `index.html`, `sw.js` e `version.json`. Preserve `config.js`, `admin.html` e as configurações do Supabase. Faça backup antes de publicar.

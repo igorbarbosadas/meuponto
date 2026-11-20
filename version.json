@@ -1,13 +1,12 @@
 {
-  "version": "1.12.9",
+  "version": "1.12.10",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-20",
   "notes": [
-    "Configuração do fechamento da folha e das datas de pagamento",
-    "Registro manual de batidas retroativas",
-    "Ação rápida de ponto no menu mobile",
-    "Horas em feriado no acompanhamento da jornada",
-    "Ajustes de rolagem no relatório mobile",
-    "Status de sincronização mais curtos"
+    "Nomenclatura de vale alterada para adiantamento",
+    "Máscara monetária brasileira no valor do adiantamento",
+    "Datas de pagamento no dia 31 ajustadas para o último dia do mês quando necessário",
+    "Botão próprio para salvar fechamento da folha e pagamento",
+    "Rascunho local automático para recuperar dados após atualização ou recarregamento"
   ]
 }
