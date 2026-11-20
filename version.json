@@ -1,12 +1,15 @@
 {
-  "version": "1.12.10",
+  "version": "1.12.11",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-20",
   "notes": [
-    "Nomenclatura de vale alterada para adiantamento",
-    "Máscara monetária brasileira no valor do adiantamento",
-    "Datas de pagamento no dia 31 ajustadas para o último dia do mês quando necessário",
-    "Botão próprio para salvar fechamento da folha e pagamento",
-    "Rascunho local automático para recuperar dados após atualização ou recarregamento"
+    "Estados de sincronização padronizados em Salvo, Sincronizando e Erro, com cores coerentes",
+    "Menu mobile com botão de batida mais legível e rótulos curtos",
+    "Configurações salariais divididas em accordions independentes",
+    "Calendário modernizado com navegação de mês, destaque do dia atual e seleção mais clara",
+    "Tratamento de feriados configurável conforme folga, escala normal ou adicional de feriado",
+    "Indicador de feriado e escala unificado para evitar informações duplicadas",
+    "Histórico, batidas, contas e estrutura de sincronização preservados",
+    "Cálculos anteriores preservados por snapshots compatíveis; novas jornadas usam o tratamento de feriado escolhido"
   ]
 }

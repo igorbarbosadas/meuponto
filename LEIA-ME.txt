@@ -1,1 +1,6 @@
-Meu Ponto v1.12.10. Substitua index.html, sw.js e version.json. Preserve config.js, admin.html e as configurações do Supabase. O rascunho do fechamento da folha é recuperado localmente após recarregamento. Consulte README.md e TESTES.md.
+Meu Ponto v1.12.11
+
+Atualização de interface, calendário, configurações e tratamento de feriados.
+Estados de sincronização: Salvo, Sincronizando e Erro.
+
+Preserve config.js e as configurações do Supabase ao publicar. Consulte README.md e TESTES.md.
