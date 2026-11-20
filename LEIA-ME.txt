@@ -1,1 +1,1 @@
-Meu Ponto v1.12.7. Leia README.md antes de publicar. Preserve o config.js atual e faça backup dos registros.
+Meu Ponto v1.12.8. Substitua index.html, sw.js e version.json. Preserve o config.js atual, admin.html e as configurações do Supabase. Faça backup dos registros antes de publicar.
