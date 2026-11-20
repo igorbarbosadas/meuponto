@@ -1,1 +1,13 @@
-{"version":"1.12.8"}
+{
+  "version": "1.12.9",
+  "name": "Meu Ponto",
+  "releaseDate": "2026-11-20",
+  "notes": [
+    "Configuração do fechamento da folha e das datas de pagamento",
+    "Registro manual de batidas retroativas",
+    "Ação rápida de ponto no menu mobile",
+    "Horas em feriado no acompanhamento da jornada",
+    "Ajustes de rolagem no relatório mobile",
+    "Status de sincronização mais curtos"
+  ]
+}

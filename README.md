@@ -1,11 +1,19 @@
-# Meu Ponto v1.12.8
+# Meu Ponto v1.12.9
 
-- Corrigida a identificação interna da versão. O APP_VERSION estava em 1.11.8 embora a interface e o manifesto indicassem 1.12.7, fazendo o aviso de atualização reaparecer.
-- O aviso agora também é ocultado quando version.json informa a mesma versão instalada.
-- O painel Acompanhamento informa o enquadramento do último período trabalhado: jornada normal, hora extra, trabalho em feriado, hora extra em feriado, trabalho em folga ou hora extra em folga.
-- Indicadores complementares para adicional noturno, feriado reconhecido, folga trabalhada, intervalo e horário fora do padrão.
-- Exibe separadamente os adicionais acumulados na jornada aberta. A classificação do momento atual não usa apenas o total acumulado de horas extras.
-- O cálculo usa as regras e o snapshot de escala/feriados vinculados à entrada. Nenhum registro ou dado do Supabase foi alterado.
+## Alterações desta versão
+- Adicionadas configurações do ciclo da folha: dia de fechamento, pagamento único ou vale + salário, datas e valor do vale.
+- Incluída prévia do período da folha. Exemplo: fechamento no dia 15, período de 15/11/2026 a 15/12/2026.
+- O relatório mensal continua organizado por mês-calendário. A configuração do ciclo da folha ainda não muda a competência dos gráficos e cálculos.
+- O registro manual agora aceita batidas retroativas, inclusive quando existem batidas posteriores. O registro rápido continua exigindo a sequência normal.
+- O acompanhamento da jornada mostra horas trabalhadas, horas extras e horas em feriado.
+- O menu inferior do celular ganhou uma ação de ponto que muda entre entrada, intervalo, retorno e saída.
+- Ajustes de rolagem horizontal em tabelas e conteúdos do relatório no celular.
+- Textos de sincronização reduzidos: carregando, dados carregados, salvando, salvo e erro.
+
+## Preservação de dados
+- Não foram alterados registros existentes nem tabelas do Supabase.
+- As novas preferências da folha são gravadas no objeto de configurações da conta conectada.
+- Os registros de ponto continuam sendo salvos no Supabase, sem migração destrutiva.
 
 ## Publicação
-Substitua index.html, sw.js e version.json. Preserve o config.js já existente, além dos arquivos de configuração do Supabase. Faça backup dos registros antes de publicar.
+Substitua `index.html`, `sw.js` e `version.json`. Preserve `config.js`, `admin.html` e as configurações do Supabase. Faça backup antes de publicar.

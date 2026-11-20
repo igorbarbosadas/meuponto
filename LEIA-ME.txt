@@ -1,1 +1,1 @@
-Meu Ponto v1.12.8. Substitua index.html, sw.js e version.json. Preserve o config.js atual, admin.html e as configurações do Supabase. Faça backup dos registros antes de publicar.
+Meu Ponto v1.12.9. Substitua index.html, sw.js e version.json. Preserve config.js, admin.html e as configurações do Supabase. Faça backup antes de publicar. Consulte README.md para as alterações e TESTES.md para a conferência.
