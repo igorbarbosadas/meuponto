@@ -1,12 +1,11 @@
 {
-  "version": "1.12.15",
+  "version": "1.12.16",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-20",
   "notes": [
-    "Seletor de folha estável no computador e no celular",
-    "Gráfico com até seis ciclos que tenham jornadas registradas",
-    "Mensagem compacta para gráficos sem dados",
-    "Acompanhamento da jornada com status atual simplificado",
-    "Valores acumulados permanecem nos cartões financeiros"
+    "Próximo dia de trabalho e próxima folga começam na data seguinte",
+    "Próximo feriado busca até um ano e inclui nacionais",
+    "Folga por feriado identificada na descrição",
+    "Correção exclusiva de apresentação da escala, sem mudanças no Supabase"
   ]
 }
