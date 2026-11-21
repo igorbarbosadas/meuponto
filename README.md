@@ -1,5 +1,7 @@
-# Meu Ponto v1.12.16
+Meu Ponto v1.12.17
 
-Correção dos cartões Minha escala e próximos dias. Os eventos "próximos" passam a buscar somente datas posteriores ao dia atual. O próximo feriado inclui feriados nacionais e locais ativos, com horizonte de até 366 dias. A próxima folga informa quando decorre de feriado. Nenhuma mudança nas batidas, regras financeiras ou sincronização.
+Alterações: cabeçalho do relatório com navegação e Folha atual na mesma linha; gráfico de rosca para a folha selecionada; alternância entre ganhos, descontos e ambos; detalhamento por categoria com filtros individuais.
+
+Os cálculos, registros e sincronização do Supabase permanecem inalterados.
 
 Publicação: substitua index.html, sw.js e version.json. Preserve config.js e admin.html.

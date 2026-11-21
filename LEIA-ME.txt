@@ -1,1 +1,1 @@
-Meu Ponto v1.12.16. Atualize index.html, sw.js e version.json. Preserve config.js.
+Meu Ponto v1.12.17. Publique index.html, sw.js e version.json. Preserve config.js e admin.html.

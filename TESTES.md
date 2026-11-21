@@ -1,3 +1,5 @@
-# Verificação v1.12.16
+Meu Ponto v1.12.17
 
-Casos para validar: 20/11/2026 (feriado atual não deve aparecer como próximo); 21/11/2026 (sábado de trabalho, folga no domingo 22); próximo feriado nacional 25/12/2026; virada 31/12/2026 para 01/01/2027; exceções e escalas de rodízio. Não é feito qualquer ajuste de dados armazenados.
+Testes locais: sintaxe dos scripts; integridade do pacote; ausência de IDs duplicados; coerência das versões; cálculo de segmentos da rosca e somatórios.
+
+Testes reais pendentes: conferir layout no celular e no desktop, troca da folha selecionada, filtros de ganho/desconto e sincronização com Supabase.
