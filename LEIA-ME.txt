@@ -1,1 +1,1 @@
-Meu Ponto v1.12.19. A legenda da pizza exibe porcentagens. Substitua index.html, sw.js e version.json; preserve config.js e admin.html.
+Meu Ponto v1.12.20. Publique index.html, sw.js e version.json. Preserve config.js e admin.html.

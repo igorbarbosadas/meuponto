@@ -1,10 +1,11 @@
 {
-  "version": "1.12.19",
+  "version": "1.12.20",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-21",
   "notes": [
-    "Restaura os percentuais na legenda do gráfico de pizza da folha selecionada",
-    "Percentuais atualizados por Tudo, Ganhos, Descontos e filtros de categorias",
-    "Preserva os totais de ganhos, descontos e líquido e os cálculos da versão anterior"
+    "Conferência financeira por rubrica",
+    "Separação das horas extras e horas em feriado no demonstrativo",
+    "Correção para pagamento de feriado em jornada prevista",
+    "Conferência de consistência do bruto e do líquido"
   ]
 }
