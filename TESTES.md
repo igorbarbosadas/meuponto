@@ -1,20 +1,17 @@
-# Testes Meu Ponto v1.12.12
+# Testes v1.12.13
 
-## Verificações estáticas
-- Sintaxe JavaScript do aplicativo e do calendário personalizado.
-- Integridade dos IDs de versão e cache do service worker.
-- Ausência de seletor nativo visível nos campos `date`, `datetime-local` e `month`.
-- Funções de seleção de ciclos por mês de fechamento.
-- Filtro de jornadas pelo intervalo semiaberto `[início, fechamento)`, sem sobreposição entre ciclos.
-- Cálculo de ganhos, descontos, DSR e composição salarial por ciclo.
+## Executados
+- Verificação de sintaxe dos cinco blocos JavaScript incluídos no HTML.
+- Teste de calendário para cada dia de 2025, 2026, 2027 e 2028, com fechamentos nos dias 1, 15, 28, 30 e 31.
+- Teste de fevereiro comum e bissexto com fechamento configurado para o dia 31.
+- Teste de fechamento em 15/12/2026: entrada de 15/11 incluída e data de 15/12 atribuída ao ciclo seguinte.
+- Verificação dos arquivos de versão e integridade do ZIP.
 
-## Testes manuais após publicação
-1. Abrir todos os campos de data em desktop e celular e confirmar que usam o mesmo calendário.
-2. Inserir uma batida retroativa e confirmar que o horário é mantido no servidor.
-3. Com fechamento no dia 15, confirmar que a folha com fechamento em 15/12 inclui batidas de 15/11 a 14/12.
-4. Confirmar que batidas a partir de 15/12 aparecem apenas na folha seguinte.
-5. Selecionar uma folha anterior e confirmar que seus valores e jornadas permanecem separados do ciclo atual.
-6. Conferir o próximo pagamento previsto para a folha selecionada.
-7. Confirmar estados de sincronização Salvo, Sincronizando e Erro com a conta real no Supabase.
+- Teste de sintaxe após ajuste que preserva a rolagem dos relatórios no celular.
 
-A validação de sincronização em produção depende do teste com a conta real. Nenhuma operação de banco ou exclusão de dados é executada por esta atualização.
+## Pendências após publicar
+1. Confirmar navegação entre folhas no celular e desktop e atualização do texto do seletor de mês.
+2. Conferir que batidas retroativas entram apenas no ciclo da data de entrada.
+3. Testar três situações do relatório: folha corrente, anterior encerrada e futura sem registros.
+4. Validar sincronização das contas reais com o Supabase.
+5. Comparar demonstrativo com contracheque para verificar diferenças de DSR, INSS, IRRF e adicionais.

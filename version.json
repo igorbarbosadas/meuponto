@@ -1,15 +1,12 @@
 {
-  "version": "1.12.12",
+  "version": "1.12.13",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-20",
   "notes": [
-    "Calendários próprios e padronizados para todos os campos de data, mês e data/hora, sem seletor nativo do navegador",
-    "Calendário de dias previstos com visual atualizado e navegação consistente",
-    "Relatórios reorganizados por ciclo de fechamento da folha, sem misturar jornadas de ciclos diferentes",
-    "Fechamento tratado como limite do ciclo: batidas a partir da data de fechamento entram na próxima folha",
-    "Composição salarial, ganhos acumulados, descontos, DSR, demonstrativo e gráfico histórico calculados por folha",
-    "Resumo financeiro da tela inicial alinhado ao ciclo atual de pagamento",
-    "Previsão de recebimento baseada no próximo pagamento após o fechamento",
-    "Dados, histórico, snapshots de cálculo, autenticação e sincronização Supabase preservados"
+    "Correção de fechamento no dia 31 em meses com menos dias",
+    "Identificação de folha atual, encerrada ou futura",
+    "Navegação por folhas com Anterior, Próxima e Folha atual",
+    "Resumo de salário indisponível quando não há registros na folha",
+    "Preservação da separação de batidas entre ciclos"
   ]
 }

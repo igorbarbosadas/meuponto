@@ -1,5 +1,5 @@
-/* Meu Ponto v1.12.12 — escopo exclusivo deste aplicativo. */
-const VERSION='1.12.12';
+/* Meu Ponto v1.12.13 — escopo exclusivo deste aplicativo. */
+const VERSION='1.12.13';
 const SHELL='meuponto-shell-'+VERSION+'-payroll-r7';
 const PUBLIC='meuponto-public-'+VERSION+'-payroll-r7';
 const APP_FILES=['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png'];

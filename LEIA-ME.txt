@@ -1,1 +1,1 @@
-Meu Ponto v1.12.12. Calendários unificados e relatórios por ciclo de folha. Consulte README.md e TESTES.md. Preserve config.js e as configurações do Supabase.
+Meu Ponto v1.12.13. Atualize index.html, sw.js e version.json. Preserve config.js, admin.html e o Supabase. Consulte README.md e TESTES.md.

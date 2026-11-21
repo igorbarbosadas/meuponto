@@ -1,16 +1,20 @@
-# Meu Ponto v1.12.12
+# Meu Ponto v1.12.13
 
-## Alterações
-- Calendário personalizado e uniforme em todos os campos de data, mês e data/hora.
-- Calendário de escala com visual atualizado.
-- Relatórios organizados por ciclo de fechamento da folha.
-- Ciclos sem sobreposição: o dia de fechamento é o limite e as batidas a partir dele pertencem ao próximo ciclo.
-- Gráfico histórico, composição salarial, ganhos, descontos, DSR e demonstrativo passam a considerar ciclos de folha.
-- Resumo financeiro da tela inicial alinhado à folha atual.
-- Prévia do próximo recebimento após o fechamento.
+## Atualizações
+- Corrigida a virada da folha quando o dia de fechamento configurado é maior que a quantidade de dias do mês. Exemplo: dia 31 passa a ser o último dia de fevereiro.
+- O ciclo de folha é determinado pela data local inteira. Uma jornada iniciada no dia do fechamento é atribuída ao ciclo seguinte, independentemente do horário da consulta.
+- Na tela Relatórios, é possível navegar entre folhas usando Anterior, Próxima e Folha atual, além do seletor personalizado de mês.
+- O período selecionado é classificado como ciclo em andamento, encerrado ou futuro.
+- Quando a folha não contém jornadas, os indicadores resumidos de bruto e líquido mostram “Sem dados”, evitando apresentar uma remuneração histórica como confirmada.
+- Uma folha encerrada não incorpora jornadas dos ciclos seguintes. Correções retroativas ainda podem atualizar os valores do ciclo antigo.
 
-## Exemplo
-Com fechamento no dia 15, o ciclo exibido como 15/11 a 15/12 considera as batidas de 15/11 até 14/12. A partir de 15/12, as batidas entram no próximo ciclo. Isso evita que uma mesma jornada apareça em duas folhas.
+- O relatório não é reconstruído a cada segundo enquanto você o consulta. Isso evita que o gráfico e a rolagem horizontal voltem ao início no celular.
+
+## Segurança
+Não foram alteradas as tabelas, políticas de segurança, permissões, autenticação ou registros existentes do Supabase. O `config.js` deve ser preservado.
+
+## Limitações
+O ciclo encerrado é uma consulta dos registros vinculados a ele, não uma folha oficialmente homologada. Alterar a configuração de fechamento posteriormente pode redistribuir jornadas entre períodos históricos. Os valores de salário, DSR e descontos continuam sendo estimativas até conferência com o contracheque.
 
 ## Publicação
-Substitua `index.html`, `sw.js` e `version.json` no GitHub Pages. Preserve `config.js`, `admin.html`, `supabase/`, `assets/`, `icons/`, o projeto Supabase, as tabelas e as políticas RLS. Não há migração SQL nesta versão.
+Atualize `index.html`, `sw.js` e `version.json` no GitHub Pages. Preserve `config.js`, `admin.html`, as funções do Supabase e os demais arquivos existentes.
