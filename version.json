@@ -1,11 +1,12 @@
 {
-  "version": "1.12.20",
+  "version": "1.12.21",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-21",
   "notes": [
-    "Conferência financeira por rubrica",
-    "Separação das horas extras e horas em feriado no demonstrativo",
-    "Correção para pagamento de feriado em jornada prevista",
-    "Conferência de consistência do bruto e do líquido"
+    "Conferência do contracheque por competência",
+    "Registro do bruto, adiantamento e pagamento final efetivos",
+    "Comparação do total recebido com o líquido estimado",
+    "Fechamento e reabertura controlados, sem alterar batidas",
+    "Sincronização da conferência no JSON existente do Supabase"
   ]
 }

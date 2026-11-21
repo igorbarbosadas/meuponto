@@ -1,7 +1,20 @@
-# Meu Ponto v1.12.20
+# Meu Ponto v1.12.21
 
-Revisão de cálculo: horas de feriado não são somadas novamente ao contador de horas extras quando pagas na rubrica de feriado. Jornada em feriado que segue escala compensada continua sem adicional de feriado. Para feriado previsto com adicional, a parcela normal já integra o salário-base e é lançado apenas o adicional sobre as horas regulares. Para trabalho em folga/feriado, o pagamento considera a hora trabalhada e o adicional, sem pagamento duplicado na rubrica de horas extras.
+Base integral da v1.12.20 com nova seção em Relatórios > Conferência do contracheque.
 
-O detalhamento da jornada e da folha apresenta separadamente horas extras computadas e horas trabalhadas em feriado. A memória da folha também apresenta uma verificação interna de soma do bruto e líquido.
+## Novo
+- Competência selecionada no relatório tem conferência própria.
+- Informe bruto do contracheque (opcional), adiantamento efetivamente recebido, pagamento final e data.
+- A comparação financeira usa total recebido = adiantamento + pagamento final. Não mistura valor previsto de adiantamento com recebido.
+- Salve conferência, feche competência, reabra ou exclua.
+- Uma competência fechada impede edição da conferência, mas **não bloqueia nem modifica batidas**. Se registros mudarem, o sistema alerta que a estimativa foi atualizada.
+- Dados sincronizados no objeto `payrollSettlements` do JSON já utilizado no Supabase. Nenhuma migração SQL.
 
-Não altera Supabase, dados salvos, escalas ou registros anteriores. Batidas existentes permanecem. A aplicação das regras ao histórico depende da configuração/snapshot de cada jornada. Valores continuam estimativas e dependem das regras coletivas.
+## Publicação
+Publique os arquivos do ZIP na raiz do projeto preservando o `config.js` existente no servidor. A publicação não deve excluir os dados nem substituir a configuração pública do Supabase.
+
+## Arquivos modificados
+`index.html`, `sw.js`, `version.json`, `README.md`, `LEIA-ME.txt`, `TESTES.md`. Arquivos `admin.html`, ícones, manifesto, logo e funções Supabase foram mantidos.
+
+## Limitações
+A conferência depende de preenchimento manual do contracheque. O fechamento é lógico e reversível e não congela as jornadas. Testes end-to-end com conta real/Supabase e navegador publicado ainda são necessários.
