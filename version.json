@@ -1,15 +1,15 @@
 {
-  "version": "1.12.11",
+  "version": "1.12.12",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-20",
   "notes": [
-    "Estados de sincronização padronizados em Salvo, Sincronizando e Erro, com cores coerentes",
-    "Menu mobile com botão de batida mais legível e rótulos curtos",
-    "Configurações salariais divididas em accordions independentes",
-    "Calendário modernizado com navegação de mês, destaque do dia atual e seleção mais clara",
-    "Tratamento de feriados configurável conforme folga, escala normal ou adicional de feriado",
-    "Indicador de feriado e escala unificado para evitar informações duplicadas",
-    "Histórico, batidas, contas e estrutura de sincronização preservados",
-    "Cálculos anteriores preservados por snapshots compatíveis; novas jornadas usam o tratamento de feriado escolhido"
+    "Calendários próprios e padronizados para todos os campos de data, mês e data/hora, sem seletor nativo do navegador",
+    "Calendário de dias previstos com visual atualizado e navegação consistente",
+    "Relatórios reorganizados por ciclo de fechamento da folha, sem misturar jornadas de ciclos diferentes",
+    "Fechamento tratado como limite do ciclo: batidas a partir da data de fechamento entram na próxima folha",
+    "Composição salarial, ganhos acumulados, descontos, DSR, demonstrativo e gráfico histórico calculados por folha",
+    "Resumo financeiro da tela inicial alinhado ao ciclo atual de pagamento",
+    "Previsão de recebimento baseada no próximo pagamento após o fechamento",
+    "Dados, histórico, snapshots de cálculo, autenticação e sincronização Supabase preservados"
   ]
 }

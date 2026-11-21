@@ -1,6 +1,1 @@
-Meu Ponto v1.12.11
-
-Atualização de interface, calendário, configurações e tratamento de feriados.
-Estados de sincronização: Salvo, Sincronizando e Erro.
-
-Preserve config.js e as configurações do Supabase ao publicar. Consulte README.md e TESTES.md.
+Meu Ponto v1.12.12. Calendários unificados e relatórios por ciclo de folha. Consulte README.md e TESTES.md. Preserve config.js e as configurações do Supabase.

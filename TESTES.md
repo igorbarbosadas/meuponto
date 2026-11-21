@@ -1,26 +1,20 @@
-# Testes do Meu Ponto v1.12.11
+# Testes Meu Ponto v1.12.12
 
-## Validações automatizadas previstas
-- Sintaxe dos scripts JavaScript embutidos no `index.html`.
-- Versão 1.12.11 alinhada entre interface, `APP_VERSION`, `version.json` e service worker.
-- Existência dos estados canônicos Salvo, Sincronizando e Erro.
-- Existência dos quatro accordions de configurações e preservação dos IDs dos campos.
-- Navegação do calendário por mês, atalho Hoje e seleção de datas.
-- Existência das três regras de tratamento de feriado.
-- Compatibilidade de dados antigos com `holidayTreatment` ausente, congelando a regra anterior nos snapshots das jornadas já existentes e aplicando `rest_extra` às novas jornadas.
-- Nenhuma alteração destrutiva no modelo de registros ou no payload do Supabase.
+## Verificações estáticas
+- Sintaxe JavaScript do aplicativo e do calendário personalizado.
+- Integridade dos IDs de versão e cache do service worker.
+- Ausência de seletor nativo visível nos campos `date`, `datetime-local` e `month`.
+- Funções de seleção de ciclos por mês de fechamento.
+- Filtro de jornadas pelo intervalo semiaberto `[início, fechamento)`, sem sobreposição entre ciclos.
+- Cálculo de ganhos, descontos, DSR e composição salarial por ciclo.
 
 ## Testes manuais após publicação
-1. Carregamento bem-sucedido: Salvo em verde.
-2. Sincronização em andamento: Sincronizando em laranja.
-3. Falha de rede ou gravação: Erro em vermelho.
-4. Menu mobile: botão central legível e com área de toque suficiente.
-5. Configurações: accordions independentes, sem perda de valores ao abrir/fechar.
-6. Calendário: navegar para mês anterior, próximo e Hoje.
-7. Feriado como folga: sem trabalho não gera adicional; trabalho registrado entra como extra com adicional de feriado.
-8. Feriado seguindo a escala: dia previsto conta como jornada normal; folga trabalhada entra como feriado.
-9. Feriado com adicional em qualquer dia: trabalho registrado recebe adicional de feriado.
-10. Dados históricos e sincronização entre dispositivos preservados.
+1. Abrir todos os campos de data em desktop e celular e confirmar que usam o mesmo calendário.
+2. Inserir uma batida retroativa e confirmar que o horário é mantido no servidor.
+3. Com fechamento no dia 15, confirmar que a folha com fechamento em 15/12 inclui batidas de 15/11 a 14/12.
+4. Confirmar que batidas a partir de 15/12 aparecem apenas na folha seguinte.
+5. Selecionar uma folha anterior e confirmar que seus valores e jornadas permanecem separados do ciclo atual.
+6. Conferir o próximo pagamento previsto para a folha selecionada.
+7. Confirmar estados de sincronização Salvo, Sincronizando e Erro com a conta real no Supabase.
 
-## Limite
-A validação local não substitui o teste de gravação no Supabase publicado. A confirmação final de sincronização deve ser feita no ambiente real, usando a conta de teste e uma conta separada.
+A validação de sincronização em produção depende do teste com a conta real. Nenhuma operação de banco ou exclusão de dados é executada por esta atualização.
