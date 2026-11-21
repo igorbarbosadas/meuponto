@@ -1,11 +1,17 @@
-# Meu Ponto v1.12.14
+# Meu Ponto v1.12.15
 
-Atualização visual da página inicial. Removida a linha inferior que repetia as informações financeiras da jornada.
+## Correções
 
-A faixa de indicadores reúne agora cinco valores: horas normais da jornada, adicional noturno da jornada, horas extras da jornada, adicional de feriado da jornada e adicionais acumulados na folha atual.
+- Relatório: o seletor de mês foi substituído por uma lista de folhas pelo mês de fechamento, sem calendário flutuante sobre os botões.
+- Relatório: os botões de folha anterior, seguinte e atual continuam disponíveis.
+- Gráfico: exibe até seis folhas COM jornadas registradas, em vez de preencher o espaço com cinco ciclos sem dados.
+- Gráfico: se não há folhas com dados, informa isso em um bloco compacto.
+- Gráfico: colunas de ganhos e descontos continuam separadas por categorias. Os filtros e os totais preservam sua função.
+- Início: o acompanhamento apresenta tempo, horas extras, horas em feriado e somente o enquadramento do momento. Os valores financeiros acumulados continuam nos cartões inferiores.
+- Início: eliminado o texto repetido de adicionais dentro do enquadramento.
 
-A informação de adicionais totais da jornada continua disponível no cálculo detalhado, sem um cartão duplicado na página inicial. Os valores usam as mesmas funções de cálculo já existentes. Nenhum dado foi alterado no Supabase.
+## Dados e segurança
 
-No celular, os quatro indicadores de jornada são apresentados em duas colunas. O total de adicionais da folha fica em uma faixa de largura completa.
+A atualização altera apenas apresentação, seleção da folha e leitura do gráfico. Não exclui batidas, não muda tabelas Supabase nem altera a fórmula de cálculo das jornadas.
 
-Para publicar: substitua index.html, sw.js e version.json. Preserve config.js e admin.html.
+Publique index.html, sw.js e version.json. Preserve config.js, admin.html e as funções do Supabase. Faça backup antes da atualização.

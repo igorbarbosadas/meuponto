@@ -1,12 +1,12 @@
 {
-  "version": "1.12.14",
+  "version": "1.12.15",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-20",
   "notes": [
-    "Correção de fechamento no dia 31 em meses com menos dias",
-    "Identificação de folha atual, encerrada ou futura",
-    "Navegação por folhas com Anterior, Próxima e Folha atual",
-    "Resumo de salário indisponível quando não há registros na folha",
-    "Preservação da separação de batidas entre ciclos"
+    "Seletor de folha estável no computador e no celular",
+    "Gráfico com até seis ciclos que tenham jornadas registradas",
+    "Mensagem compacta para gráficos sem dados",
+    "Acompanhamento da jornada com status atual simplificado",
+    "Valores acumulados permanecem nos cartões financeiros"
   ]
 }
