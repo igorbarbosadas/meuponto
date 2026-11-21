@@ -1,1 +1,1 @@
-Meu Ponto v1.12.13. Atualize index.html, sw.js e version.json. Preserve config.js, admin.html e o Supabase. Consulte README.md e TESTES.md.
+Meu Ponto v1.12.14. Publique index.html, sw.js e version.json. Preserve config.js, admin.html e dados do Supabase.
