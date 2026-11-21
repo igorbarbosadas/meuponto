@@ -1,1 +1,1 @@
-Meu Ponto v1.12.17. Publique index.html, sw.js e version.json. Preserve config.js e admin.html.
+Meu Ponto v1.12.18. Publicar index.html, sw.js e version.json. Preservar config.js, admin.html e Supabase.

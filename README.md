@@ -1,7 +1,11 @@
-Meu Ponto v1.12.17
+Meu Ponto v1.12.18
 
-Alterações: cabeçalho do relatório com navegação e Folha atual na mesma linha; gráfico de rosca para a folha selecionada; alternância entre ganhos, descontos e ambos; detalhamento por categoria com filtros individuais.
+Alteração principal: uma única pizza para a composição salarial da folha selecionada, com salário-base, adicionais, horas extras, feriados, DSR e descontos.
 
-Os cálculos, registros e sincronização do Supabase permanecem inalterados.
+Interação: no computador, passe o mouse sobre uma fatia. No celular, toque. A categoria, o valor e o percentual aparecem em um quadro separado abaixo do gráfico. O teclado também permite seleção com Tab e Enter.
 
-Publicação: substitua index.html, sw.js e version.json. Preserve config.js e admin.html.
+O seletor Tudo / Ganhos / Descontos e os filtros individuais continuam disponíveis. Os totais de ganhos, descontos e líquido não são alterados por filtros. A pizza do modo Tudo representa a soma das parcelas positivas de ganhos e dos valores absolutos dos descontos, portanto o percentual não representa participação no salário líquido.
+
+O gráfico considera somente a folha selecionada. Não altera cálculos, registros nem estruturas no Supabase.
+
+Para publicar no GitHub Pages, substitua index.html, sw.js e version.json. Preserve config.js, admin.html e as funções do Supabase.

@@ -1,5 +1,7 @@
-Meu Ponto v1.12.17
+Meu Ponto v1.12.18 · validação técnica
 
-Testes locais: sintaxe dos scripts; integridade do pacote; ausência de IDs duplicados; coerência das versões; cálculo de segmentos da rosca e somatórios.
+Aprovado: sintaxe dos cinco scripts incorporados em index.html, renderização de modelo com Tudo/Ganhos/Descontos, verificação de versão e integridade do ZIP.
 
-Testes reais pendentes: conferir layout no celular e no desktop, troca da folha selecionada, filtros de ganho/desconto e sincronização com Supabase.
+Para testar na publicação: passar o mouse em cada fatia, tocar em uma fatia no celular, selecionar com Tab/Enter, filtrar categorias, conferir que os totais permanecem fixos, testar folha vazia e verificar posicionamento em telas de 320 a 1440px.
+
+Não foi realizada validação integrada no Supabase ou teste real de navegador nesta sessão.

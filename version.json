@@ -1,11 +1,11 @@
 {
-  "version": "1.12.17",
+  "version": "1.12.18",
   "name": "Meu Ponto",
-  "releaseDate": "2026-11-20",
+  "releaseDate": "2026-11-21",
   "notes": [
-    "Seletor de folha e botão Folha atual na mesma linha",
-    "Gráfico de rosca para a competência selecionada",
-    "Modos Tudo, Ganhos e Descontos com subcategorias interativas",
-    "Layout adaptado para desktop e celular"
+    "Gráfico único de pizza com todos os ganhos e descontos da folha selecionada",
+    "Hover no computador, toque no celular e navegação por teclado",
+    "Filtros para ganhos, descontos e categorias individuais",
+    "Totais de bruto, descontos e líquido preservados"
   ]
 }
