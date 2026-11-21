@@ -1,7 +1,7 @@
-/* Meu Ponto v1.12.18 — escopo exclusivo deste aplicativo. */
-const VERSION='1.12.18';
-const SHELL='meuponto-shell-'+VERSION+'-payroll-r8';
-const PUBLIC='meuponto-public-'+VERSION+'-payroll-r8';
+/* Meu Ponto v1.12.19 — escopo exclusivo deste aplicativo. */
+const VERSION='1.12.19';
+const SHELL='meuponto-shell-'+VERSION+'-payroll-r9';
+const PUBLIC='meuponto-public-'+VERSION+'-payroll-r9';
 const APP_FILES=['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png'];
 self.addEventListener('install',event=>{
  event.waitUntil(caches.open(SHELL).then(cache=>cache.addAll(APP_FILES)));

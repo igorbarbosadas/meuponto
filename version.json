@@ -1,11 +1,10 @@
 {
-  "version": "1.12.18",
+  "version": "1.12.19",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-21",
   "notes": [
-    "Gráfico único de pizza com todos os ganhos e descontos da folha selecionada",
-    "Hover no computador, toque no celular e navegação por teclado",
-    "Filtros para ganhos, descontos e categorias individuais",
-    "Totais de bruto, descontos e líquido preservados"
+    "Restaura os percentuais na legenda do gráfico de pizza da folha selecionada",
+    "Percentuais atualizados por Tudo, Ganhos, Descontos e filtros de categorias",
+    "Preserva os totais de ganhos, descontos e líquido e os cálculos da versão anterior"
   ]
 }
