@@ -1,12 +1,11 @@
 {
-  "version": "1.12.21",
+  "version": "1.12.23",
   "name": "Meu Ponto",
-  "releaseDate": "2026-11-21",
+  "releaseDate": "2026-11-25",
   "notes": [
-    "Conferência do contracheque por competência",
-    "Registro do bruto, adiantamento e pagamento final efetivos",
-    "Comparação do total recebido com o líquido estimado",
-    "Fechamento e reabertura controlados, sem alterar batidas",
-    "Sincronização da conferência no JSON existente do Supabase"
+    "Otimização da atualização do relógio e painéis, sem recalcular toda a interface a cada segundo",
+    "Verificação leve de revisões do Supabase antes de baixar o histórico",
+    "Redução de renderizações repetidas após leituras e sincronização",
+    "Preservadas as regras financeiras e a gravação com controle de revisão"
   ]
 }
