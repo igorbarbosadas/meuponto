@@ -1,12 +1,11 @@
 {
-  "version": "1.12.27",
+  "version": "1.12.28",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
-    "Escala e cobertura por data usadas no detalhamento e cálculo de jornadas antigas",
-    "Saída prevista corresponde ao turno planejado, sem deslocamento artificial da entrada",
-    "Pequenas variações na entrada e saída não geram extras quando dentro da tolerância estimada",
-    "Separa atraso bruto e desconto, mantendo batidas, saldos e estrutura Supabase",
-    "Incorpora relatório de atrasos da v1.12.25 e cobertura independente da v1.12.24"
+    "Consolidação da versão 1.12.27: formulário fixo único e cobertura independente, visível",
+    "Separação segura dos blocos de rodízio, cobertura e exceções sem duplicar controles",
+    "Preferência pelo turno da data da jornada e suporte a cobertura alternada para 05/11 e 06/11",
+    "Preservados controles de atrasos, tolerância, rubricas, contracheque e integração Supabase"
   ]
 }
