@@ -11,3 +11,6 @@ Base: v1.12.28.4. Atualização experimental de persistência local e sincroniza
 
 ## LIMITAÇÕES IMPORTANTES
 O aplicativo ainda envia um estado completo por conta e não faz mesclagem por registro. A fila local depende do armazenamento do navegador; não protege contra exclusão do armazenamento, modo anônimo ou perda física do dispositivo. A segurança em dois dispositivos simultâneos exige validação adicional. Antes de publicar, exporte backup da versão em uso e não instale enquanto houver envio pendente.
+
+
+v1.12.29.1: limpeza seletiva de backups históricos com exportação prévia. NUNCA limpa fila offline. Conflito entre dispositivos exige conferência; reconciliação automática não implementada.

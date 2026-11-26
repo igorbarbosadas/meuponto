@@ -1,1 +1,3 @@
 Meu Ponto v1.12.29. Preservar config.js. Fazer backup e validar em homologação antes de produção. Não limpar dados do navegador.
+
+v1.12.29.1: limpeza seletiva de backups históricos com exportação prévia. NUNCA limpa fila offline. Conflito entre dispositivos exige conferência; reconciliação automática não implementada.

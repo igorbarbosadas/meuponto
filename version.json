@@ -1,11 +1,11 @@
 {
-  "version": "1.12.29",
+  "version": "1.12.29.1",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
-    "Persistência local de alterações pendentes",
-    "Reenvio automático com verificação de revisão",
-    "Proteção contra sobrescrita silenciosa",
-    "Preservação das regras financeiras da v1.12.28.4"
+    "Separa backups históricos da fila de sincronização pendente",
+    "Exclusão manual de backups históricos apenas após exportação",
+    "Preserva IndexedDB, diário offline e dados Supabase",
+    "Confirmação de sincronização não ignora diário local"
   ]
 }

@@ -14,3 +14,6 @@
 5. Testar IndexedDB indisponível/localStorage cheio, login offline e falha de autenticação.
 
 Não publicar como atualização validada sem executar os testes de integração com conta de homologação.
+
+
+v1.12.29.1: limpeza seletiva de backups históricos com exportação prévia. NUNCA limpa fila offline. Conflito entre dispositivos exige conferência; reconciliação automática não implementada.
