@@ -1,4 +1,4 @@
-# Testes Meu Ponto v1.12.28.1
+# Testes Meu Ponto v1.12.28.2
 
 ## Locais
 - Verificação de sintaxe JavaScript.
@@ -14,19 +14,27 @@
 5. Recarregar a página e conferir que a cobertura permanece sincronizada.
 6. Revisar registros históricos anteriores, inclusive os salvos na v1.12.23.
 
-## v1.12.28.1
+## v1.12.28.2
 - Testar entrada 07:14 para escala 07:00: 14 minutos de atraso bruto.
 - Testar entrada 08:04 para escala 08:00: 4 minutos de atraso bruto.
 - Testar entrada 08:11 para escala 08:00: 11 minutos de atraso bruto.
 - Conferir se nenhum valor é abatido automaticamente do salário.
 - Conferir cobertura histórica e registros no Supabase após publicar.
 
-### v1.12.28.1 - regressões a conferir na conta
+### v1.12.28.2 - regressões a conferir na conta
 - 06/11/2026: cobertura 07h-16h, batidas 06h57 e 16h04, intervalo 1h. Saída prevista 16h, extra estimada 0h00.
 - Entradas com atraso em 20/10, 28/10 e 29/10: atraso bruto separado de descontos oficiais.
 - Jornadas noturnas e cobertura de semanas alternadas: conferir retorno ao horário efetivo.
 - Publicação: verificar sincronização real antes de usar os totais como folha oficial.
 
-v1.12.28.1: tolerância configurável por marcação, atrasos brutos e após tolerância, sem desconto automático.
+v1.12.28.2: tolerância configurável por marcação, atrasos brutos e após tolerância, sem desconto automático.
 
-Atualização v1.12.28.1: consolidação sem duplicar formulários, cobertura independente e correção da identificação de escala.
+Atualização v1.12.28.2: consolidação sem duplicar formulários, cobertura independente e correção da identificação de escala.
+
+## Regressão v1.12.28.2
+- Rodízio vigente 12/10/2026, semana 2 em 05/11 e 06/11, inclusive para batidas com calcSnapshot anterior.
+- 05/11/2026 06:50–18:33, intervalo 60 min: extras 2h33 (tolerância 10min na entrada).
+- 06/11/2026 06:57–16:04, intervalo 60 min: extras 0h00 (tolerância 10min).
+- Preservar salário e outros parâmetros financeiros históricos por batida.
+- Dados de usuário não são modificados pela atualização.
+- IMPORTANTE: suporte offline durável não foi implementado nesta correção; a função save() atual ainda rejeita alterações sem conexão. Não testar registro offline como salvo.

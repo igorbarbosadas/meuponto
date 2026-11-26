@@ -1,4 +1,4 @@
-# Meu Ponto v1.12.28.1
+# Meu Ponto v1.12.28.2
 
 ## Alterações
 
@@ -26,6 +26,11 @@ Faça backup do conteúdo publicado. Envie os arquivos atualizados do ZIP, prese
 
 Validação local de sintaxe, estrutura e lógica de calendário não substitui testes com conta real no Supabase e com registros efetivos.
 
-v1.12.28.1: tolerância configurável por marcação, atrasos brutos e após tolerância, sem desconto automático.
+v1.12.28.2: tolerância configurável por marcação, atrasos brutos e após tolerância, sem desconto automático.
 
-Atualização v1.12.28.1: consolidação sem duplicar formulários, cobertura independente e correção da identificação de escala.
+Atualização v1.12.28.2: consolidação sem duplicar formulários, cobertura independente e correção da identificação de escala.
+
+## Correção v1.12.28.2
+O cálculo anteriormente consultava `shiftCycle` do snapshot da batida, mesmo depois do usuário salvar uma escala retroativa. Agora os cálculos de jornadas, a auditoria e o acompanhamento de atrasos consultam o rodízio vigente cadastrado, mantendo regras financeiras do snapshot. Esta correção não altera registros existentes no servidor.
+
+**Limitação conhecida:** nesta versão, o aplicativo ainda não dispõe de fila durável offline para novas batidas. Não considere alterações offline como persistidas. A próxima etapa deve implementar armazenamento local transacional e sincronização confirmada pelo Supabase.

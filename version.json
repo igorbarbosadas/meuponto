@@ -1,11 +1,11 @@
 {
-  "version": "1.12.28.1",
+  "version": "1.12.28.2",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
-    "Consolidação da versão 1.12.27: formulário fixo único e cobertura independente, visível",
-    "Separação segura dos blocos de rodízio, cobertura e exceções sem duplicar controles",
-    "Preferência pelo turno da data da jornada e suporte a cobertura alternada para 05/11 e 06/11",
-    "Preservados controles de atrasos, tolerância, rubricas, contracheque e integração Supabase"
+    "Correção do rodízio histórico em jornadas com snapshot anterior: escala efetiva atual prevalece pela data, mantendo salário/regras financeiras históricos",
+    "Correção dos relatórios e da tela Cálculo da jornada sem alterar batidas, snapshots ou esquema Supabase",
+    "Removido o título duplicado da cobertura temporária",
+    "Mantidos os controles de atrasos, tolerância, conferência de contracheque e login da v1.12.28.1"
   ]
 }
