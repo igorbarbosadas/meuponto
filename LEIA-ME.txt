@@ -1,7 +1,7 @@
-Meu Ponto v1.12.28
+Meu Ponto v1.12.28.1
 Escala efetiva separada da cobertura de turno, agora com semanas alternadas.
 Veja README.md e TESTES.md antes de publicar.
 
-v1.12.28: tolerância configurável por marcação, atrasos brutos e após tolerância, sem desconto automático.
+v1.12.28.1: tolerância configurável por marcação, atrasos brutos e após tolerância, sem desconto automático.
 
-Atualização v1.12.28: consolidação sem duplicar formulários, cobertura independente e correção da identificação de escala.
+Atualização v1.12.28.1: consolidação sem duplicar formulários, cobertura independente e correção da identificação de escala.
