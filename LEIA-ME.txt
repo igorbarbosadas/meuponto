@@ -1,9 +1,1 @@
-Meu Ponto v1.12.28.3
-Escala efetiva separada da cobertura de turno, agora com semanas alternadas.
-Veja README.md e TESTES.md antes de publicar.
-
-v1.12.28.3: tolerância configurável por marcação, atrasos brutos e após tolerância, sem desconto automático.
-
-Atualização v1.12.28.3: consolidação sem duplicar formulários, cobertura independente e correção da identificação de escala.
-
-Versão 1.12.28.4: domingos trabalhados (100%), sem alteração no banco.
+Meu Ponto v1.12.29. Preservar config.js. Fazer backup e validar em homologação antes de produção. Não limpar dados do navegador.

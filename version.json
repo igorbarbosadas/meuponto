@@ -1,11 +1,11 @@
 {
-  "version": "1.12.28.4",
+  "version": "1.12.29",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
-    "Domingos trabalhados classificados como horas extras com adicional configurável (padrão 100%)",
-    "Pagamento de domingo separado de hora extra comum e feriado, sem duplicação",
-    "Cálculos e relatórios atualizados sem alterar registros do Supabase",
-    "Persistência offline durável ainda pendente; esta versão não deve ser publicada com gravações pendentes"
+    "Persistência local de alterações pendentes",
+    "Reenvio automático com verificação de revisão",
+    "Proteção contra sobrescrita silenciosa",
+    "Preservação das regras financeiras da v1.12.28.4"
   ]
 }
