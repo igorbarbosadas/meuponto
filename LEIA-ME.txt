@@ -1,3 +1,5 @@
-Meu Ponto v1.12.29. Preservar config.js. Fazer backup e validar em homologação antes de produção. Não limpar dados do navegador.
+Meu Ponto v1.12.29.2 - HOMOLOGAÇÃO
 
-v1.12.29.1: limpeza seletiva de backups históricos com exportação prévia. NUNCA limpa fila offline. Conflito entre dispositivos exige conferência; reconciliação automática não implementada.
+Correção da conciliação entre dispositivos. NÃO sobrescreva produção durante pendências.
+Não apague cache/dados locais ou importe backups antigos sobre dados recentes.
+Preserve config.js publicado, que não acompanha este pacote.

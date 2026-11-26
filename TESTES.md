@@ -1,19 +1,17 @@
-# Testes da v1.12.29
+# Testes v1.12.29.2
 
-## Verificações estáticas
-- Sintaxe dos scripts JS
-- Identificação consistente da versão
-- Integridade do ZIP
-- Preservação dos componentes de escalas e domingos
+- [x] Sintaxe JavaScript (node --check)
+- [x] Conciliação: batidas independentes (mescladas)
+- [x] Conciliação: mesmo ID modificado em ambos (bloqueada)
+- [x] Conciliação: exclusão local + inserção remota (preservadas)
+- [x] Conciliação: mudanças independentes de configuração (mescladas)
+- [x] Conciliação: diário anterior sem estado-base (bloqueado)
+- [x] Integridade do pacote ZIP
+- [ ] Login de homologação
+- [ ] Offline, fechar navegador, reabrir e reconectar
+- [ ] Duas sessões alterando batidas distintas
+- [ ] Duas sessões alterando a mesma batida
+- [ ] Recuperação de saída 26/11/2026 às 17h08
+- [ ] Verificar Supabase com dispositivo independente
 
-## Testes ainda necessários em navegador real
-1. Salvar batida online e verificar status Salvo após confirmação.
-2. Desligar internet, registrar duas batidas, fechar/reabrir, e conferir preservação.
-3. Reconectar e conferir dados após atualização da página.
-4. Simular conflito de dois dispositivos e verificar se nenhum registro é sobrescrito.
-5. Testar IndexedDB indisponível/localStorage cheio, login offline e falha de autenticação.
-
-Não publicar como atualização validada sem executar os testes de integração com conta de homologação.
-
-
-v1.12.29.1: limpeza seletiva de backups históricos com exportação prévia. NUNCA limpa fila offline. Conflito entre dispositivos exige conferência; reconciliação automática não implementada.
+Observação: nenhuma mudança ou exclusão no banco foi executada durante a preparação deste pacote.

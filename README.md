@@ -1,16 +1,15 @@
-# Meu Ponto v1.12.29
+# Meu Ponto v1.12.29.2 (homologação)
 
-Base: v1.12.28.4. Atualização experimental de persistência local e sincronização.
+Base exata: pacote v1.12.29.1_SEGURANCA.zip.
 
-- Diário persistente síncrono no localStorage, associado à conta, antes do envio ao Supabase.
-- Cópia assíncrona adicional no IndexedDB.
-- Restauração da fila após recarregar o navegador, mediante checagem de revisão no servidor.
-- Múltiplas alterações locais podem ser enfileiradas sem bloquear o formulário.
-- Reenvio com espera progressiva e verificação otimista de revisão.
-- Conflitos de outro dispositivo não são mesclados automaticamente.
+## Conciliação segura
+- Diário local mantém o estado-base da revisão do Supabase quando nasce uma alteração pendente.
+- Ao detectar alteração no servidor por outro dispositivo, a aplicação compara estado-base, cópia local e estado remoto.
+- Batidas independentes (IDs distintos), alterações independentes em configurações, feriados e exceções podem ser mescladas.
+- Mudanças incompatíveis no mesmo registro ou campo NÃO são sobrescritas. A fila continua no dispositivo, para exportação e conferência.
+- Diários antigos sem estado-base NÃO são mesclados automaticamente. Exportar e reconciliar manualmente para proteger dados históricos.
+- Atualizações sequenciais feitas durante envio preservam a versão local mais recente.
+- O IndexedDB continua sendo espelho local e o Supabase continua sendo a fonte de registros confirmados.
 
-## LIMITAÇÕES IMPORTANTES
-O aplicativo ainda envia um estado completo por conta e não faz mesclagem por registro. A fila local depende do armazenamento do navegador; não protege contra exclusão do armazenamento, modo anônimo ou perda física do dispositivo. A segurança em dois dispositivos simultâneos exige validação adicional. Antes de publicar, exporte backup da versão em uso e não instale enquanto houver envio pendente.
-
-
-v1.12.29.1: limpeza seletiva de backups históricos com exportação prévia. NUNCA limpa fila offline. Conflito entre dispositivos exige conferência; reconciliação automática não implementada.
+## Publicação
+VERSÃO DE HOMOLOGAÇÃO, não publicar em produção com alterações pendentes. Exportar backup completo do servidor e diário local antes de qualquer mudança. A sincronização real entre dispositivos precisa ser testada.

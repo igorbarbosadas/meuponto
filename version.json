@@ -1,11 +1,11 @@
 {
-  "version": "1.12.29.1",
+  "version": "1.12.29.2",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
-    "Separa backups históricos da fila de sincronização pendente",
-    "Exclusão manual de backups históricos apenas após exportação",
-    "Preserva IndexedDB, diário offline e dados Supabase",
-    "Confirmação de sincronização não ignora diário local"
+    "Reconciliação conservadora de registros independentes entre dispositivos",
+    "Revisão-base persistida junto à fila offline",
+    "Conflitos na mesma batida permanecem protegidos e exigem conferência",
+    "Não descarta dados ou backups históricos"
   ]
 }
