@@ -1,11 +1,11 @@
 {
-  "version": "1.12.28.2",
+  "version": "1.12.28.3",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
-    "Correção do rodízio histórico em jornadas com snapshot anterior: escala efetiva atual prevalece pela data, mantendo salário/regras financeiras históricos",
-    "Correção dos relatórios e da tela Cálculo da jornada sem alterar batidas, snapshots ou esquema Supabase",
-    "Removido o título duplicado da cobertura temporária",
-    "Mantidos os controles de atrasos, tolerância, conferência de contracheque e login da v1.12.28.1"
+    "Otimização do ciclo automático de atualização da interface: evita recalcular toda a folha a cada segundo",
+    "Limites de espera nas chamadas de autenticação e gravação para evitar bloqueio indefinido",
+    "Redução de consultas repetidas ao retornar à aba",
+    "Mantida a estratégia conservadora de gravação no Supabase; suporte offline durável ainda não implementado"
   ]
 }
