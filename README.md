@@ -1,4 +1,4 @@
-# Meu Ponto v1.12.24.1.1
+# Meu Ponto v1.12.27
 
 ## Alterações
 
@@ -25,3 +25,5 @@ Faça backup do conteúdo publicado. Envie os arquivos atualizados do ZIP, prese
 ## Limitações
 
 Validação local de sintaxe, estrutura e lógica de calendário não substitui testes com conta real no Supabase e com registros efetivos.
+
+v1.12.27: tolerância configurável por marcação, atrasos brutos e após tolerância, sem desconto automático.

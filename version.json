@@ -1,14 +1,12 @@
 {
-  "version": "1.12.24.1",
+  "version": "1.12.27",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
-    "Correção: seção Cobertura de turno sempre visível fora das escalas principais",
-    "Preserva a escala efetiva e o cadastro de coberturas da v1.12.24",
-    "Escala efetiva independente da cobertura opcional",
-    "Cobertura temporária fixa ou em semanas alternadas, com intervalo de datas",
-    "Cobertura pode ser cadastrada para datas passadas, atuais ou futuras",
-    "Compatibilidade com períodos históricos já cadastrados na v1.12.23",
-    "Preserva registros de ponto, salário e estrutura atual do Supabase"
+    "Escala e cobertura por data usadas no detalhamento e cálculo de jornadas antigas",
+    "Saída prevista corresponde ao turno planejado, sem deslocamento artificial da entrada",
+    "Pequenas variações na entrada e saída não geram extras quando dentro da tolerância estimada",
+    "Separa atraso bruto e desconto, mantendo batidas, saldos e estrutura Supabase",
+    "Incorpora relatório de atrasos da v1.12.25 e cobertura independente da v1.12.24"
   ]
 }

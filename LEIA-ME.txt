@@ -1,3 +1,5 @@
-Meu Ponto v1.12.24.1.1
+Meu Ponto v1.12.27
 Escala efetiva separada da cobertura de turno, agora com semanas alternadas.
 Veja README.md e TESTES.md antes de publicar.
+
+v1.12.27: tolerância configurável por marcação, atrasos brutos e após tolerância, sem desconto automático.
