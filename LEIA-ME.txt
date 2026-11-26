@@ -1,4 +1,4 @@
-Meu Ponto v1.12.29.2 - HOMOLOGAÇÃO
+Meu Ponto v1.12.29.3 - HOMOLOGAÇÃO
 
 Correção da conciliação entre dispositivos. NÃO sobrescreva produção durante pendências.
 Não apague cache/dados locais ou importe backups antigos sobre dados recentes.

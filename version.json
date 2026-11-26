@@ -1,11 +1,11 @@
 {
-  "version": "1.12.29.2",
+  "version": "1.12.29.3",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
-    "Reconciliação conservadora de registros independentes entre dispositivos",
-    "Revisão-base persistida junto à fila offline",
-    "Conflitos na mesma batida permanecem protegidos e exigem conferência",
-    "Não descarta dados ou backups históricos"
+    "Recuperação de sessão previamente autenticada e dados locais após F5 offline",
+    "Conflitos apresentados dentro do aplicativo, sem bloquear login",
+    "Escolha explícita por batida e backup antes de qualquer sincronização",
+    "Proteção das filas e registros existentes"
   ]
 }
