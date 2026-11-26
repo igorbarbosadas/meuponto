@@ -1,3 +1,3 @@
-Meu Ponto v1.12.24
+Meu Ponto v1.12.24.1.1
 Escala efetiva separada da cobertura de turno, agora com semanas alternadas.
 Veja README.md e TESTES.md antes de publicar.

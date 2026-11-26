@@ -1,4 +1,4 @@
-# Testes Meu Ponto v1.12.24
+# Testes Meu Ponto v1.12.24.1.1
 
 ## Locais
 - Verificação de sintaxe JavaScript.

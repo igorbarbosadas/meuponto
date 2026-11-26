@@ -1,8 +1,10 @@
 {
-  "version": "1.12.24",
+  "version": "1.12.24.1",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
+    "Correção: seção Cobertura de turno sempre visível fora das escalas principais",
+    "Preserva a escala efetiva e o cadastro de coberturas da v1.12.24",
     "Escala efetiva independente da cobertura opcional",
     "Cobertura temporária fixa ou em semanas alternadas, com intervalo de datas",
     "Cobertura pode ser cadastrada para datas passadas, atuais ou futuras",
