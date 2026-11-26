@@ -1,11 +1,12 @@
 {
-  "version": "1.12.23",
+  "version": "1.12.24",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
-    "Escalas históricas com início e término, separadas do rodízio atual",
-    "Atalho para os dois horários antigos: 08h-18h segunda a sexta e 07h-16h segunda a sexta com sábado 07h-12h",
-    "Recalcula horários previstos de jornadas anteriores preservando batidas, salário e regras de cada snapshot",
-    "Compatível com a sincronização Supabase existente, sem migração SQL"
+    "Escala efetiva independente da cobertura opcional",
+    "Cobertura temporária fixa ou em semanas alternadas, com intervalo de datas",
+    "Cobertura pode ser cadastrada para datas passadas, atuais ou futuras",
+    "Compatibilidade com períodos históricos já cadastrados na v1.12.23",
+    "Preserva registros de ponto, salário e estrutura atual do Supabase"
   ]
 }

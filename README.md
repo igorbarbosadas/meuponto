@@ -1,16 +1,27 @@
-# Meu Ponto v1.12.23
+# Meu Ponto v1.12.24
 
-Atualização da v1.12.22 para escalas históricas.
+## Alterações
 
-## Correção
-Na aba Ajustes > Minhas escalas > Escala de períodos anteriores, use "Preencher horários antigos", informe a segunda-feira inicial da semana 1 e a data final em que a escala antiga deixou de valer. Clique em "Salvar escala histórica".
+- **Escala efetiva**: escolha horário fixo semanal ou semanas alternadas. A seleção abre o editor, sem sobrescrever configurações até salvar.
+- **Cobertura opcional independente**: aparece em um bloco separado e não substitui o tipo de escala efetiva escolhido no seletor.
+- **Tipo de cobertura**: horário fixo por período ou rodízio de 2 a 4 semanas.
+- **Períodos**: início e término (opcional), inclusive datas passadas. Para rodízio, início precisa ser segunda-feira correspondente à semana 1.
+- **Horários antigos**: use a própria cobertura com rodízio de semanas, sem uma seção separada de escalas históricas.
+- **Compatibilidade**: registros `historicalShiftCycles` já existentes continuam sendo interpretados, sem limpeza automática de dados; novas coberturas são gravadas em `settings.coverages`.
+- **Prioridade**: exceções de dia específico (trabalho/folga), cobertura cadastrada, escalas históricas legadas e escala efetiva.
+- **Preservação**: batidas, histórico e salários dos registros não são apagados. Não requer migração SQL.
 
-O atalho configura:
-- Semana 1: segunda a sexta 08:00–18:00, intervalo 60 min; sábado e domingo folga.
-- Semana 2: segunda a sexta 07:00–16:00, intervalo 60 min; sábado 07:00–12:00 sem intervalo; domingo folga.
+## Exemplo de cobertura em semanas alternadas
 
-O período histórico tem prioridade somente nas datas cadastradas. Rodízio atual, coberturas, salário e jornadas registradas permanecem intactos. As configurações de cada registro continuam preservadas em `calcSnapshot`, enquanto apenas a escala histórica prevalece para determinar horário previsto dentro das datas cadastradas. Os dados são salvos em `settings.historicalShiftCycles` dentro da estrutura existente no Supabase.
+Semana 1: seg a sex 08:00–18:00 com intervalo de 60 min. Sábado e domingo de folga.
+Semana 2: seg a sex 07:00–16:00 com intervalo de 60 min. Sábado 07:00–12:00 com intervalo de 0 min. Domingo de folga.
 
-A data de início deve ser a segunda-feira da semana 1. Não são aceitos intervalos históricos sobrepostos. O sistema não altera as batidas de ponto nem o valor do salário no snapshot.
+Informe segunda-feira de início da semana 1 e a data de fim do período. Salve a cobertura e confira o cálculo dos dias antigos em Relatórios.
 
-Mantenha o `config.js` já publicado no servidor. Não há alteração SQL.
+## Instalação
+
+Faça backup do conteúdo publicado. Envie os arquivos atualizados do ZIP, preservando `config.js` existente no servidor (não incluído). O navegador pode manter cache da versão anterior até carregar o novo Service Worker.
+
+## Limitações
+
+Validação local de sintaxe, estrutura e lógica de calendário não substitui testes com conta real no Supabase e com registros efetivos.
