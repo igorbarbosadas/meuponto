@@ -1,1 +1,1 @@
-Meu Ponto v1.12.29.4. Versão de homologação. Faça backup antes de publicar. Mantenha o config.js existente no servidor. Confira TESTES.md.
+Meu Ponto v1.12.29.5 (homologação). NÃO APAGUE config.js. Primeiro execute verificar-publicacao.html. Leia README.md.

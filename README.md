@@ -1,9 +1,14 @@
-Meu Ponto v1.12.29.4 | HOMOLOGAÇÃO
+Meu Ponto v1.12.29.5 | HOMOLOGAÇÃO
 
-Base: v1.12.29.3. Não altera tabelas nem registros diretamente no Supabase.
+Este pacote corrige a orientação e facilita o diagnóstico de uma falha de publicação do arquivo config.js.
 
-Correções: operações IndexedDB sequenciais por conta; recuperação de tentativas de sincronização durante outra gravação; retomada de fila ao voltar à aba.
+IMPORTANTE: o ZIP NÃO contém o config.js real. O arquivo era externo ao pacote nas versões anteriores. Sem o config.js publicado em /meuponto/config.js, o login ONLINE não funciona. O pacote não tem como recriar sua URL e chave publicável do Supabase.
 
-ATENÇÃO: a nuvem continua como fonte principal. A gravação local usa localStorage e espelho IndexedDB. Não remova dados do navegador antes de validar a sincronização.
+Passos seguros:
+1. Faça backup dos arquivos existentes no GitHub Pages e de qualquer JSON local pendente.
+2. Confirme que o config.js publicado continua na raiz do site, junto de index.html. Se estiver ausente, restaure a CÓPIA JÁ EXISTENTE desse arquivo. Não crie um novo projeto Supabase.
+3. Publique os arquivos desta versão sem excluir config.js.
+4. Abra verificar-publicacao.html e clique em Verificar arquivos. Essa página não imprime o conteúdo do config.js.
+5. Somente depois teste login online e F5 offline; compare batidas em segundo navegador.
 
-Preserve config.js publicado na hospedagem. Testar com conta de homologação antes de produção.
+Nenhuma migração SQL, exclusão de registros ou importação de backups está incluída.

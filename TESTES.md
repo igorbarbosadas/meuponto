@@ -1,15 +1,12 @@
-Meu Ponto v1.12.29.4
+Meu Ponto v1.12.29.5 · Validação de implantação
 
-Verificações estáticas:
-- [x] sintaxe do JavaScript
-- [x] versionamento e ZIP íntegros
-- [x] funções de cálculo e interface preservadas
+[ ] config.js retorna HTTP 200 no diagnóstico, sem mostrar conteúdo.
+[ ] Login online funciona com a conta existente.
+[ ] Registros antigos mantidos e iguais ao Supabase.
+[ ] Backup JSON exportado antes de testes.
+[ ] Uma batida fictícia salva offline sobrevive ao F5.
+[ ] A batida sincroniza quando reconecta.
+[ ] Um segundo navegador exibe a batida após confirmação do servidor.
+[ ] Nenhum backup ou registro original foi apagado.
 
-Testes reais PENDENTES:
-- [ ] entrar online, criar batida fictícia offline e F5 offline
-- [ ] fechar/reabrir navegador offline, conferir batida
-- [ ] voltar à conexão e confirmar envio no segundo dispositivo
-- [ ] várias alterações offline sem duplicação
-- [ ] conflict resolution em dois navegadores
-- [ ] alternância de abas com envio pendente
-- [ ] conferência de jornadas 05/11, 06/11 e domingo 08/11
+Verificações locais executadas: sintaxe JS e integridade ZIP. Não há homologação real da conta.

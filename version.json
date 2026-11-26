@@ -1,11 +1,11 @@
 {
-  "version": "1.12.29.4",
+  "version": "1.12.29.5",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
-    "Ordenação sequencial de gravações e remoções IndexedDB por conta",
-    "Reenvio após gravação em andamento, sem descartar fila",
-    "Retomada de sincronização quando aba volta ao foco",
-    "Preserva cálculos, escalas e backups da v1.12.29.3"
+    "Diagnóstico de publicação: verificar config.js sem expor valores",
+    "Mensagem de erro mais precisa se config.js não estiver disponível",
+    "Preserva fila local, backups e regras da versão anterior",
+    "config.js não acompanha ZIP: restaurar arquivo existente no GitHub Pages"
   ]
 }
