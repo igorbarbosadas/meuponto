@@ -45,3 +45,12 @@ Atualização v1.12.28.3: consolidação sem duplicar formulários, cobertura in
 - Verificar batida com conexão: deve continuar exigindo confirmação do Supabase.
 - Testar internet interrompida durante push: falha precisa liberar a trava da interface e preservar estado pendente em memória até nova tentativa.
 - ATENÇÃO: sem fila offline durável. Não fechar a página com dados pendentes.
+
+
+## v1.12.28.4: testes de regressão necessários
+- Domingo 08/11/2026 07:41-17:13, pausa 60 min: 8h32 extras e 100% no campo domingos.
+- Dia 05/11/2026: 2h33 extras 50% conforme escala antiga cadastrada.
+- Dia 06/11/2026: sem horas extras após tolerância.
+- Domingo coincidente com feriado: lançar só na rubrica feriado, sem duplicar.
+- Confirmação dos dados no Supabase e login só podem ser testados no ambiente publicado.
+- Teste local Node: domingo 08/11 com 8h32 gerou R$ 308,75, sem horas extras comuns; domingo feriado não duplicou; 05/11 gerou 2h33; 06/11 0h.
