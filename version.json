@@ -1,11 +1,11 @@
 {
   "version": "1.12.23",
   "name": "Meu Ponto",
-  "releaseDate": "2026-11-25",
+  "releaseDate": "2026-11-26",
   "notes": [
-    "Otimização da atualização do relógio e painéis, sem recalcular toda a interface a cada segundo",
-    "Verificação leve de revisões do Supabase antes de baixar o histórico",
-    "Redução de renderizações repetidas após leituras e sincronização",
-    "Preservadas as regras financeiras e a gravação com controle de revisão"
+    "Escalas históricas com início e término, separadas do rodízio atual",
+    "Atalho para os dois horários antigos: 08h-18h segunda a sexta e 07h-16h segunda a sexta com sábado 07h-12h",
+    "Recalcula horários previstos de jornadas anteriores preservando batidas, salário e regras de cada snapshot",
+    "Compatível com a sincronização Supabase existente, sem migração SQL"
   ]
 }

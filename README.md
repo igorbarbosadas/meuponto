@@ -1,10 +1,16 @@
 # Meu Ponto v1.12.23
 
-Revisão de cálculo: horas de feriado não são somadas novamente ao contador de horas extras quando pagas na rubrica de feriado. Jornada em feriado que segue escala compensada continua sem adicional de feriado. Para feriado previsto com adicional, a parcela normal já integra o salário-base e é lançado apenas o adicional sobre as horas regulares. Para trabalho em folga/feriado, o pagamento considera a hora trabalhada e o adicional, sem pagamento duplicado na rubrica de horas extras.
+Atualização da v1.12.22 para escalas históricas.
 
-O detalhamento da jornada e da folha apresenta separadamente horas extras computadas e horas trabalhadas em feriado. A memória da folha também apresenta uma verificação interna de soma do bruto e líquido.
+## Correção
+Na aba Ajustes > Minhas escalas > Escala de períodos anteriores, use "Preencher horários antigos", informe a segunda-feira inicial da semana 1 e a data final em que a escala antiga deixou de valer. Clique em "Salvar escala histórica".
 
-Não altera Supabase, dados salvos, escalas ou registros anteriores. Batidas existentes permanecem. A aplicação das regras ao histórico depende da configuração/snapshot de cada jornada. Valores continuam estimativas e dependem das regras coletivas.
+O atalho configura:
+- Semana 1: segunda a sexta 08:00–18:00, intervalo 60 min; sábado e domingo folga.
+- Semana 2: segunda a sexta 07:00–16:00, intervalo 60 min; sábado 07:00–12:00 sem intervalo; domingo folga.
 
+O período histórico tem prioridade somente nas datas cadastradas. Rodízio atual, coberturas, salário e jornadas registradas permanecem intactos. As configurações de cada registro continuam preservadas em `calcSnapshot`, enquanto apenas a escala histórica prevalece para determinar horário previsto dentro das datas cadastradas. Os dados são salvos em `settings.historicalShiftCycles` dentro da estrutura existente no Supabase.
 
-Atualização v1.12.23: consulta leve de revisão antes de recarregar dados; menos renderizações periódicas. A base utilizada foi a v1.12.20 enviada. Não sobrescreva uma implantação mais nova sem comparar os arquivos.
+A data de início deve ser a segunda-feira da semana 1. Não são aceitos intervalos históricos sobrepostos. O sistema não altera as batidas de ponto nem o valor do salário no snapshot.
+
+Mantenha o `config.js` já publicado no servidor. Não há alteração SQL.
