@@ -1,5 +1,1 @@
-Meu Ponto v1.12.29.3 - HOMOLOGAÇÃO
-
-Correção da conciliação entre dispositivos. NÃO sobrescreva produção durante pendências.
-Não apague cache/dados locais ou importe backups antigos sobre dados recentes.
-Preserve config.js publicado, que não acompanha este pacote.
+Meu Ponto v1.12.29.4. Versão de homologação. Faça backup antes de publicar. Mantenha o config.js existente no servidor. Confira TESTES.md.

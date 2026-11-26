@@ -1,11 +1,11 @@
 {
-  "version": "1.12.29.3",
+  "version": "1.12.29.4",
   "name": "Meu Ponto",
   "releaseDate": "2026-11-26",
   "notes": [
-    "Recuperação de sessão previamente autenticada e dados locais após F5 offline",
-    "Conflitos apresentados dentro do aplicativo, sem bloquear login",
-    "Escolha explícita por batida e backup antes de qualquer sincronização",
-    "Proteção das filas e registros existentes"
+    "Ordenação sequencial de gravações e remoções IndexedDB por conta",
+    "Reenvio após gravação em andamento, sem descartar fila",
+    "Retomada de sincronização quando aba volta ao foco",
+    "Preserva cálculos, escalas e backups da v1.12.29.3"
   ]
 }
